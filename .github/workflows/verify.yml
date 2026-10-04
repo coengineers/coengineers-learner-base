@@ -1,0 +1,78 @@
+name: Verify learner base
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  # The quick half: formatting, types, unit tests, a build, the secret scan and the package audit.
+  source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.33.2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm verify:source
+  # The slow half: the app in three browsers and on a phone-sized screen, against a local database.
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.33.2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - uses: supabase/setup-cli@v1
+        with:
+          version: 2.72.7
+      - run: pnpm install --frozen-lockfile
+      - name: Start the local database (tries three image stores if one is busy)
+        run: |
+          for registry in public.ecr.aws ghcr.io docker.io; do
+            if SUPABASE_INTERNAL_IMAGE_REGISTRY=$registry supabase start > /tmp/learner-supabase-start.log 2>&1; then exit 0; fi
+            echo "Could not start from $registry:"
+            grep -v -i -E 'key|secret|jwt' /tmp/learner-supabase-start.log | tail -3
+            supabase stop --no-backup > /dev/null 2>&1 || true
+            sleep 15
+          done
+          exit 1
+      - run: pnpm run setup
+      - name: Read the browser version
+        id: playwright
+        run: echo "version=$(pnpm exec playwright --version | tr -d ' ')" >> "$GITHUB_OUTPUT"
+      # The browsers are kept between runs and downloaded again only when their version changes.
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: browsers-${{ runner.os }}-${{ steps.playwright.outputs.version }}
+      # Install system packages once, outside browser-download retries, so a slow apt install cannot hold the next attempt's lock.
+      - name: Install browser system dependencies
+        timeout-minutes: 8
+        run: pnpm exec playwright install-deps chromium firefox webkit
+      - name: Install the browsers (two tries of four minutes, never a long hang)
+        run: |
+          for attempt in 1 2; do
+            if timeout --kill-after=10s 240 pnpm exec playwright install chromium firefox webkit; then exit 0; fi
+            echo "Browser install try $attempt failed or exceeded four minutes."
+          done
+          exit 1
+      # The app's own doorway serves the built pages, so build them before the browser tests start it.
+      - run: pnpm build
+      - run: pnpm verify:browsers
+      - if: always()
+        run: supabase stop

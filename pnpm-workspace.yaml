@@ -1,0 +1,9 @@
+packages:
+  - apps/*
+  - packages/*
+onlyBuiltDependencies:
+  - esbuild
+  - workerd
+overrides:
+  "@esbuild-kit/core-utils>esbuild": 0.25.12
+  undici: ">=7.29.1 <8"

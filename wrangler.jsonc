@@ -1,0 +1,39 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "learner-base-local",
+  "main": "apps/api/src/index.ts",
+  "compatibility_date": "2026-09-20",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./dist/web",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"],
+  },
+  "vars": {
+    "APP_ENV": "local",
+    "APP_ORIGIN": "http://127.0.0.1:4310",
+    "SUPABASE_URL": "http://127.0.0.1:58321",
+    "SUPABASE_PUBLISHABLE_KEY": "configure-with-pnpm-setup",
+  },
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "invocation_logs": false,
+      "head_sampling_rate": 1,
+    },
+  },
+  // Your app online, at its free test address. Used only by: pnpm run online
+  // The database's address, its public key and the app's own web address are NOT written here.
+  // They are set once in the hosting's own settings (APP_ORIGIN, SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY)
+  // and kept on every update. Without them the app answers "cannot connect", on purpose.
+  "env": {
+    "online": {
+      "name": "my-app-test",
+      "vars": {
+        "APP_ENV": "uat",
+      },
+    },
+  },
+}

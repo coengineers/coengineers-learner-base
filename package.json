@@ -1,0 +1,57 @@
+{
+  "name": "coengineers-learner-base",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.2",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "dev": "vite --config apps/web/vite.config.ts --host 127.0.0.1",
+    "dev:api": "wrangler dev --port 8787",
+    "build": "vite build --config apps/web/vite.config.ts && wrangler deploy --dry-run --outdir .local/worker",
+    "typecheck": "wrangler types && tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "format": "prettier --write .",
+    "lint": "prettier --check . && node scripts/boundaries.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "setup": "node scripts/local-setup.mjs",
+    "db:reset": "node scripts/reset.mjs",
+    "verify:source": "pnpm lint && pnpm typecheck && pnpm test && pnpm build && node scripts/secret-scan.mjs && pnpm audit --audit-level moderate",
+    "verify:browsers": "supabase db lint --local --schema public --fail-on warning && pnpm test:e2e",
+    "verify": "pnpm verify:source && pnpm verify:browsers",
+    "online": "pnpm build && wrangler deploy --env online --keep-vars",
+    "provision": "node scripts/provision.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.116.0",
+    "@tanstack/react-query": "5.103.1",
+    "@tanstack/react-router": "1.170.38",
+    "@trpc/client": "11.19.0",
+    "@trpc/server": "11.19.0",
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "drizzle-orm": "0.45.2",
+    "hono": "4.13.8",
+    "lucide-react": "1.47.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@cloudflare/workers-types": "5.20260920.1",
+    "@playwright/test": "1.63.0",
+    "@types/node": "26.6.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "drizzle-kit": "0.31.10",
+    "prettier": "3.9.8",
+    "typescript": "5.9.3",
+    "vite": "8.3.0",
+    "vitest": "5.0.1",
+    "wrangler": "4.135.0"
+  }
+}
