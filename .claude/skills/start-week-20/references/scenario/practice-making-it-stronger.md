@@ -1,4 +1,4 @@
-# Chilli Community at Week 20: making it stronger
+# Chilli Community at Week 20: the supported drop-in
 
 All of this is Chilli's, for practice only. Results are marked "Simulated for the course". Never save it to the founder's second brain or task list.
 
@@ -8,11 +8,10 @@ All of this is Chilli's, for practice only. Results are marked "Simulated for th
 
 ## What happened
 
-The weak spots, ranked by harm to members:
+Week 20 is a supported drop-in. John brought one stuck item from Week 19 and left the rest.
 
-1. **A member who cancelled could still see the week's post.** Fixed first and rechecked: a cancelled member now sees nothing.
-2. Sign-in had no limit on wrong passwords. Dated: next week.
-3. A member could guess another member's photo address. Dated: next week.
-4. Where keys are kept: checked, nothing wrong.
-
-**The recheck:** John, as a cancelled member, opened the app and saw only the join page (Simulated for the course).
+- **The stuck item:** after going live, the confirmation email landed in spam for one tester.
+- **At the drop-in:** John and the helper looked at only that item. The helper explained what the sign-in emails need; John made the change in his own account and the helper did not touch it.
+- **The recheck:** John signed up with a made-up account and the email arrived in the inbox (Simulated for the course).
+- **Resolved:** the email problem. **Not touched:** a sign-in attempt limit, which John dated for next week and noted in the support note.
+- **The task:** "Repeat the sign-up check after the next change", dated next Tuesday.

@@ -1,9 +1,9 @@
 ---
 name: product-hardener
-description: Finds and ranks what would hurt the founder's members most, security first, fixes the worst in Claude Code on the web and rechecks it as a member would. Use in the Week 20 lab.
+description: Finds what would hurt members most, security first, fixes the worst and rechecks it as a member. Use when a Week 20 drop-in agrees one security or reliability concern.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.1"
+  version: "2.0.2"
   week: "W20"
   course: "Ship"
   author: "CoEngineers"
@@ -51,13 +51,13 @@ Before handing over, read the checks on the change (the green tick or red cross 
 1. **Sign-in.** Limits on wrong passwords, email confirmation, password recovery, how long someone stays signed in.
 2. **Who can see what.** A signed-out visitor, a signed-in non-member, a second member and a cancelled member each try to reach what is not theirs.
 3. **Where members' details and secret codes are kept.** Details only in the database, in the agreed region; no key or password in the code, the logs or the second brain; a scan for secrets left in the code and risky add-ons.
-4. **Payment and access staying in step.** Use the agreed membership or pay-as-you-go model: cancellation keeps membership access to the paid-through date, purchases retain their agreed uses/expiry, and refunds affect only the agreed entitlement; the same sale twice lets nobody in twice; the shop's messages are checked as genuine.
+4. **Payment and access staying in step.** Use the agreed membership or pay-as-you-go model: cancellation keeps membership access to the paid-through date, purchases retain their agreed uses/expiry, and refunds affect only the agreed entitlement; the same sale twice lets nobody in twice; the payment page's messages are checked as genuine.
 5. **A member-style retest** of every journey after the fixes.
 
 ## What you make
 
-1. **The Weak-spots page.** One self-contained page in the founder's Claude account, in their brand: each weak spot in plain words, who it would hurt and how, its rank, and what was done or decided. The selected concern resolved and rechecked, or awaiting support with a reason. Readable on a phone, no downloads.
-2. **`product/YYYY-MM-DD-weak-spots.md`**: the same content.
+1. **The Weak-spots page, optional.** Only if the founder wants one: one self-contained page in the founder's Claude account, in their brand: each weak spot in plain words, who it would hurt and how, its rank, and what was done or decided. The selected concern resolved and rechecked, or awaiting support with a reason. Readable on a phone, no downloads.
+2. **The result for the Week 20 support note.** The agreed concern, what was done or decided, the repeat result and what remains, in the lab's `product/YYYY-MM-DD-support-note.md`. If there is a Weak-spots page, `product/YYYY-MM-DD-weak-spots.md` holds the same content; otherwise write no separate weak-spots file.
 
 ## Method
 
@@ -81,6 +81,6 @@ Before handing over, read the checks on the change (the green tick or red cross 
 - The agreed concern and its affected checks were looked at, or listed as not checked with the reason. A broader review is not required for the drop-in.
 - Any ranking is by harm; the chosen concern has an actual repeat result or a support need.
 - The rest are dated or accepted, each with a reason.
-- The page and the record agree; British English, no em dashes.
+- Any page and the record agree; British English, no em dashes.
 
-Hand the lab, as the one block to paste: the record's full text, the fixes to turn into tasks, one line each, and any new weak spot. The lab makes the Weak-spots page and saves the note.
+Hand the lab, as the one block to paste: the result for the support note in full, the fixes to turn into tasks, one line each, and any new weak spot. The Week 20 lab carries the result in its support note; a Weak-spots page is made only if the founder asked for one.

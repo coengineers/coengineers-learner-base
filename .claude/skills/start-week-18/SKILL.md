@@ -3,7 +3,7 @@ name: start-week-18
 description: Runs the CoEngineers Week 18 lab. A fresh tester follows a script on the founder's app, and every problem is graded by how much it hurts. Use when they type start week 18.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.1"
+  version: "2.0.2"
   week: "W18"
   course: "Ship"
   author: "CoEngineers"
@@ -28,7 +28,7 @@ From the Week 17 What happened section: whether the payment page opened, showed 
 ## Decisions (two rounds at most)
 
 1. **The tester and the script.** After the builder's draft script (the plan's journeys, step by step, with what should happen): confirm the steps and the tester.
-2. **The grades.** For each problem the tester hit, the founder chooses serious, annoying or cosmetic, and propose change, accept with a reason, or seek support. Draft the grades from what happened. This week identifies the changes; Week 19 plans, implements and retests the agreed ones.
+2. **The grades.** For each problem the tester hit, the founder chooses serious, annoying or cosmetic, and whether to propose a change, accept it with a reason or seek support. Draft the grades from what happened. This week identifies the changes; Week 19 plans, implements and retests the agreed ones.
 
 ## Artifact
 
