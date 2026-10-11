@@ -1,20 +1,23 @@
 // Change this file to give an independent learner copy its own identity.
+// First step after copying the template: set name, appLabel and topBarLabel below.
 // Assets are owned by the copy under apps/web/public/brand.
 export const brand = {
-  name: "CoEngineers",
-  appLabel: "Your business",
-  topBarLabel: "Your business",
+  name: "Your app",
+  appLabel: "Your app",
+  topBarLabel: "Your app",
   navHome: "Overview",
   navFiles: "My files",
   navAccount: "My account",
   navGuide: "Getting started",
-  wordmarkAccent: "Co",
+  wordmarkAccent: "",
   logoUrl: null as string | null,
+  // true when the logo image already spells the name (a wordmark), so the name is not repeated as text.
+  logoIncludesName: false,
   illustrationUrl: "/brand/workbench.webp",
   signInHeading: "Build something useful.",
   signInDescription:
     "Your starting point for a business app. A place to try, learn and build with confidence.",
-  footer: "A starting point from CoEngineers.",
+  footer: "A starting point for your business.",
   homeDescription:
     "A little structure. Plenty of possibility. This is where your business app begins.",
   homePill: "READY TO MAKE YOUR OWN",
@@ -55,7 +58,7 @@ export const brand = {
   sidebarDescription:
     "The essentials are here. Build the rest around your business.",
   sidebarLink: "Explore your starting point",
-  sidebarEdition: "Base app · v0.1",
+  sidebarEdition: "Base app",
   mainFooter: "Your starting point. Made to become your own.",
   guideDescription:
     "You don’t need to understand the code to understand your starting point.",
@@ -131,7 +134,10 @@ export function applyBrand() {
     );
     document.documentElement.style.setProperty("--" + cssName, value);
   }
-  document.title = brand.appLabel + " · " + brand.name;
+  document.title =
+    brand.appLabel === brand.name
+      ? brand.name
+      : brand.appLabel + " · " + brand.name;
   document
     .querySelector('meta[name="theme-color"]')
     ?.setAttribute("content", brand.theme.canvas);

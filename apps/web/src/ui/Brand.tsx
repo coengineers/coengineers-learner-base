@@ -1,4 +1,5 @@
 import { brand } from "../brand";
+import { brandIdentity } from "./brandIdentity";
 export function Brand({
   compact = false,
   showName = false,
@@ -6,16 +7,13 @@ export function Brand({
   compact?: boolean;
   showName?: boolean;
 }) {
+  const { showLogo, showText, logoAlt } = brandIdentity(brand, showName);
   return (
     <span className={"brand-identity " + (compact ? "compact" : "")}>
-      {brand.logoUrl && (
-        <img
-          className="brand-logo"
-          src={brand.logoUrl}
-          alt={showName ? "" : brand.name}
-        />
+      {showLogo && brand.logoUrl && (
+        <img className="brand-logo" src={brand.logoUrl} alt={logoAlt} />
       )}
-      {(!brand.logoUrl || showName) && (
+      {showText && (
         <span className="wordmark">
           {brand.wordmarkAccent &&
           brand.name.startsWith(brand.wordmarkAccent) ? (
@@ -28,7 +26,9 @@ export function Brand({
           )}
         </span>
       )}
-      {!compact && <small>{brand.appLabel}</small>}
+      {!compact && brand.appLabel !== brand.name && (
+        <small>{brand.appLabel}</small>
+      )}
     </span>
   );
 }

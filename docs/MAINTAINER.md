@@ -44,6 +44,8 @@ python3 scripts/vendor-ship-skills.py /path/to/coengineers-plugin --replace
 
 The plugin checkout must be committed and clean. The command copies the listed skills and every file they use, records the plugin version, commit and each file's SHA-256 in `.claude/ship-skills-manifest.json`, and reads every installed file back. Running it again on the same plugin commit changes nothing. Without `--replace` it refuses to touch skills that are already there. With `--replace` it replaces them only if nobody has edited them since they were last brought in; otherwise it names the edited files and changes nothing. Open the result as a change and merge it when the check is green.
 
+CI runs `python3 scripts/vendor-ship-skills.py --check` on every change. It compares every file under `.claude/skills` with the SHA-256 recorded in `.claude/ship-skills-manifest.json` and fails if a file was edited, added or removed by hand.
+
 Run it after every plugin release that touches a build skill or a Ship lab.
 
 ### Bringing a learner's existing copy up to date
@@ -59,3 +61,19 @@ git fetch https://github.com/coengineers/coengineers-learner-base.git main && gi
 ```
 
 It replaces only the skills folder and its manifest. The founder's own app code is not touched.
+
+### Bringing a learner's code and dependencies up to date
+
+The line above brings in skills only. There is no script that updates a learner's app code or packages; it is a reviewed change that Claude Code makes in the learner's own copy, and it needs a person who understands the diff. The founder pastes this into Claude Code with their app chosen:
+
+> Bring my app up to date with the CoEngineers base app version <new version>, as a change for me to approve. Do not overwrite my product files.
+
+Claude Code then:
+
+1. Fetches the template with `git fetch https://github.com/coengineers/coengineers-learner-base.git main` and reads the release's PR (the maintainer lists the changed files and any new settings in the notice).
+2. Compares only those listed files, including `package.json` and `pnpm-lock.yaml` for dependency patches, with `git diff HEAD FETCH_HEAD -- <files>`.
+3. Applies each listed file on a branch. Where the learner has edited the same file (usually `apps/web/src/brand.ts` or a page they built), it merges by hand and keeps the learner's product behaviour and their brand values; it never takes the template's version of those over theirs.
+4. Runs `pnpm install` and `pnpm verify`, and reports anything red.
+5. Opens the change. The learner approves it after the checks are green; only then does it go online.
+
+Skills and code are separate changes: a notice that promises a code or security update must say that the skills line does not apply it.
