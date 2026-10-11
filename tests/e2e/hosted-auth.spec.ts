@@ -15,7 +15,13 @@ test("hosted users can sign in and request recovery without GitHub", async ({
   await page.goto("/");
   // Identity stays beside the form even when the story panel is hidden on phones.
   await expect(page.locator(".auth-card .brand-identity")).toBeVisible();
-  await expect(page.locator(".auth-card .wordmark")).not.toBeEmpty();
+  // The name is shown exactly once: as the wordmark text, or as the accessible name of a
+  // logo that already spells it (logoIncludesName), never both.
+  await expect(
+    page
+      .locator(".auth-card .brand-identity")
+      .locator(".wordmark:not(:empty), img.brand-logo:not([alt=''])"),
+  ).toHaveCount(1);
   await expect(
     page.getByRole("button", { name: "Continue with GitHub" }),
   ).toHaveCount(0);
