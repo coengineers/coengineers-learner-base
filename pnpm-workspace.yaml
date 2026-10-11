@@ -7,3 +7,5 @@ onlyBuiltDependencies:
 overrides:
   "@esbuild-kit/core-utils>esbuild": 0.25.12
   undici: ">=7.29.1 <8"
+  "miniflare>sharp": 0.35.5
+  "postcss>source-map-js": 1.2.2

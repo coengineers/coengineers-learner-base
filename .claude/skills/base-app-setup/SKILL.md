@@ -3,7 +3,7 @@ name: base-app-setup
 description: Sets up the founder's own copy of the base app, its database and online home, and joins them up, then maps it. Use in Your app's accounts session or when they want their app's accounts set up.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
   week: "Setup"
   course: "Ship"
   author: "CoEngineers"
@@ -30,12 +30,12 @@ The session should hold two things: the founder's app and their second brain. Re
 - `business/one-line.md`, `brand/DESIGN.md`, `offer/OFFER.md`, `product/PRD.md` if there is one, and an earlier `product/app-map.md` (a rerun: change only what changed).
 - The app's name and region, from the sentence the founder pasted. Ask only for what it leaves out.
 - The founder's copy of the base app, already chosen in this session. They made it before the session with Use this template on https://github.com/coengineers/coengineers-learner-base, set to Private.
-- Accounts made by CoEngineers in the founder's name: GitHub, the database and the place the app lives online. See `references/method.md` for the parts and account steps.
+- Learner-created and learner-owned accounts: GitHub from Module 0, Supabase and Cloudflare prepared in Week 12 Do before Week 13. See `references/method.md` for the parts and account steps.
 
 ## Steps
 
 1. Say in three lines what they will have, that the account steps are theirs alone, and that free plans need no card.
-2. **Take the accounts over.** For each account, one at a time: the founder signs in and confirms their name shows as owner. Wait for "done" each time. Replacing the temporary password and turning on two-step sign-in are theirs to do after the session, by the three routes on the Do page; say so once and do not walk them through it here. Passwords and keys go only into the provider's own page or Code's secret settings, never the chat. An account missing or in someone else's name: stop that step and tell John.
+2. **Check the learner's accounts.** For each account, the founder signs in on its own site and confirms their name or organisation is the owner. Wait for "done" each time. They use their own password and secured sign-in from Week 12 preparation; no temporary password or staff-created account is expected. Passwords and keys go only into the provider's own page or Code's secret settings, never the chat. If an account is missing, use the Week 12 Do guide; if it belongs to someone else, stop that step and seek support. Never create an account for them.
 3. **Check the copy.** It is in the founder's own GitHub, named after the app, private, and starts from one commit. If this session is not on their copy, stop and give the steps: on the base app's page press Use this template, then Create a new repository, owner themselves, Private (never Fork: a fork of a public page is public), then choose it here with +. If the copy is public, they make it private in its Settings before you go on. Then check nothing from CoEngineers came with it.
 4. **Database.** Create the project in the agreed region, set it up with the app's own set-up, switch on email sign-in with confirmation, and set the return addresses to the test address. Check a confirmation email reaches the founder's own inbox.
 5. **Online home.** Connect the copy to where it will live online, give the build settings from `references/method.md`, and have the founder type the three settings into the online home's own settings. Check whether an approved change reaches the free test address automatically. Record Automatic only when seen; otherwise record Manual and say "ask whoever set up your online home to update it".

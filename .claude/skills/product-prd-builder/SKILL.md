@@ -3,7 +3,7 @@ name: product-prd-builder
 description: Sorts the offer into what the base app does, what is new in version 1 (three features at most) and what is by hand, and writes the plan page. Use in the Week 13 lab.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
   week: "W13"
   course: "Ship"
   author: "CoEngineers"

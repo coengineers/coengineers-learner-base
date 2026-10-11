@@ -1,71 +1,66 @@
 ---
 name: start-week-20
-description: Runs the CoEngineers Week 20 lab. The founder ranks what would hurt members most, security first, fixes the worst and rechecks it as a member. Use when they type start week 20.
+description: Runs the CoEngineers Week 20 supported drop-in. The founder brings unfinished changes or checks, agrees help and records what was resolved. Use when they type start week 20.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.0"
+  version: "3.0.0"
   week: "W20"
   course: "Ship"
   author: "CoEngineers"
 ---
 
-# Week 20 lab: Make it stronger
+# Week 20 lab: Supported drop-in
 
-Read `references/lab-rules.md` first and follow its eight steps. If the installed reference files cannot be opened, read the same files from the founder's approved app with `GitHub:get_file_contents`: `.claude/skills/start-week-20/references/lab-rules.md`, `save-rules.md` and `task-rules.md` in that same folder. Find the app from the founder's context or app map. Use this read-only fallback before asking the founder to locate files. If neither copy can be read, name the missing rules and stop before any write. This page gives the week's details. The work is done by the `product-hardener` skill. About 30 minutes.
+Read `references/lab-rules.md` first and follow its eight steps. If the installed reference files cannot be opened, read the same files from the founder's approved app with `GitHub:get_file_contents`: `.claude/skills/start-week-20/references/lab-rules.md`, `save-rules.md` and `task-rules.md` in that same folder. Find the app from the founder's context or app map. Use this read-only fallback before asking the founder to locate files. If neither copy can be read, name the missing rules and stop before any write. This page gives the week's details. About 30 minutes with support for the founder's actual stuck steps. There is no compulsory new technical audit or feature to build.
 
 ## Before you start
 
-Find the founder's second brain (`GitHub:search_repositories`, query `user:@me second-brain`). Read `product/app-map.md`, the launch record, the Week 18 test results and `product/PRD.md`. If the app is not online, send them to the Week 19 lab first.
+Read `product/app-map.md`, the Week 18 findings, Week 19 change plan and repeat results, the Week 13 Plan and any recorded launch checks. Missing launch notes or a bought domain do not block this drop-in. A free working address is enough to bring a problem; if there is no working address, that is itself a support item.
 
-A working free test address counts as online for practice checks. A bought web address, a launch record, an opening date and a payment page are not needed for those checks. Use the address and update method in the app map. Keep real sign-up, email delivery and member checks marked untried wherever they have not happened; never turn a practice check into a real member result.
+**Bring:** the unresolved Week 19 list, what they tried, what they saw, and any member comments or screenshots. No passwords or secret codes.
 
-**Bring:** the Week 18 test results, and anything members have said since the app went online.
+Ask whether they are at the supported drop-in now. If not, help prepare a short support note and confirm which session they plan to attend using the course timetable; never invent a session time or say it is booked. They can do safe checks they understand now; steps that need help remain waiting for the session.
 
 ## Check-in
 
-Read the latest saved What happened outcome, not just the task title or its Done status. A finished task named "Fix" can mean the founder accepted a problem or it was not reproduced. Say a fix was made only when the outcome reports an actual change and its repeat check. Keep simulated repeats labelled simulated.
-
-Read the Week 19 task "Open your live address on your phone and set your open date". A date for the doors makes the top fix urgent.
-
-From the Week 19 What happened section: whether the live address opened on their phone, and the date they set to open the doors.
+Read the saved outcomes, not only task titles or Done status. For each item distinguish a change with a passed repeat, an accepted issue, not reproduced, a failed repeat and not checked. Keep practice, hosted and real-member evidence separate, and retain simulated labels.
 
 ## Decisions (two rounds at most)
 
-1. **The weak spots.** After the hardener's ranked draft (limits on sign-in attempts, who can see what, where members' details and secret codes are kept, payment and access staying in step): the founder confirms the order by harm to members, not effort.
-2. **What you fix, date or accept.** The top one is fixed now. For each other, a date or an accepted risk with a reason. Draft from the ranking.
+1. **Where help is needed.** Draft the short list from Week 19: the journey or setup step, what was expected, what happened and what they have already tried. The founder chooses which one to tackle with support first.
+2. **The supported next step.** Agree what to change or check, who helps, who does the owner-only step and what will show it worked. If nothing is outstanding, record that and review readiness for the pilot without inventing work.
 
 ## Artifact
 
-Build in Claude Code, the building tool (say it like that the first time, then just Claude Code). Tell the founder: open https://claude.ai/code, choose your app, and add your second brain with the + button. Before the handover, look at the app for changes still waiting for their yes (`GitHub:list_pull_requests` on the app the app map names). If last week's is waiting, say so and ask them to approve it first or agree to build on top of it. Start the pasted handover with "First bring my app’s copy up to date with the changes I have approved. Read the current skill from that copy before using it." Then give them the skill sentence, with the text below it that the lab hands over: a line starting "Change only:" that names exactly what was agreed (name the tests that check those words too, if the words change); "Leave everything else as it is. Do not change my second brain. Set no reminders."; and "When you finish, end with these five lines for me to copy back: Built: / Left: / Checks: / Still waiting for my yes: / New weak spots noticed: (each one, or none)." Claude Code works from the copy of the skills kept in the app, which can be older than these rules, so the pasted text must carry all of this every time. If what they paste back has no such five lines, say so and ask them to ask Claude Code for them Their job is to decide what it does and whether it is right. Say how they will see it: nothing is online until they press the green button on the app's change; only if the app map confirms updates are automatic, the test address updates after that. Otherwise say "ask whoever set up your online home to update it". When Claude Code has opened the change, they paste its hand-back block here and say "built"; the phone check is their step after the lab. If the block says the app already does this, say so, and use the lab to check it against the done test instead of calling it built. Read the block: say which change to approve, add any new weak spot to the notes and ask whether it becomes a task. This lab saves the notes; Claude Code opens no change to the second brain, and if it did, say so and ask them to close that one.
+A support note, not a new technical specification: each question, what the helper and founder did, what the repeat showed, what is resolved and what still needs a person and date. Show it before saving.
 
-The sentence: "Use the product-hardener skill on my app." Hand over the ranked weak spots below it.
+When a code change is agreed, use the same bounded Code handover as Week 19: named change only, preserve earlier work, no second-brain writes or reminders, checks and a five-line Built / Left / Checks / Still waiting for your yes / New weak spots noticed hand-back. Use `feature-builder` and `feature-checker`; use `product-hardener` only for a specific security or reliability concern chosen with the helper, not a compulsory broad audit. The founder approves the app change and updates the working address before a hosted repeat can be claimed.
 
-What they get is the Weak-spots page: ranked by harm to members, the top one fixed and rechecked as a member would, the rest dated or accepted. If the recheck cannot be done yet, the page says "Fix made, not rechecked" and what the recheck is waiting for, never Fixed.
+For domain, email, privacy, backup or recovery steps, use `go-live` with support only when needed. Keep the free app address if they prefer it. No purchases, real charges, invitations or account actions happen for them. Never imply a helper has been contacted. Unresolved privacy, access or payment faults keep joining closed. Accepted is not Fixed; a setting inspected is not a member test.
 
 ## Criteria
 
-- Ranked by harm to members, not effort.
-- The top one fixed and rechecked.
-- The rest dated or accepted.
+- Each support question says what happened and what help is needed.
+- Each attempted fix has an actual repeat result or says not checked yet.
+- Remaining steps have a named person and date, or an explicit waiting reason.
+- The learner can say what is resolved and what remains before inviting anyone.
 
 ## Records
 
 Before any GitHub write, read `references/save-rules.md` and follow its five steps. Prepare and read back the notes on a new branch, then give the named comparison link with the verified branch, title and body. The founder puts the change forward there and saves it with the two green buttons. Never call `GitHub:create_pull_request`, refer to a form or Submit, or describe an already opened change as still needing to be put forward. The notes are prepared until the founder approves and the saved notes are read back. Read the saved notes before making tasks, and never repeat successful task writes on a retry.
 
-Before writing either note, compare every result with the saved Do outcome and Claude Code's hand-back. Keep the source of each check: a separate practice copy, a hosted setting looked at, or a real member test. A setting seen is not a member test; a practice pass is not a pass on the hosted address. If the source or result was not given, write Unknown. Carry accepted problems and no-change outcomes into the summary unchanged, and never call them Fixed. Read both prepared notes back against these facts before offering the green button.
+Compare each result with the saved outcome and Code hand-back. Read both prepared notes back before offering the green button. Preserve accepted and no-change outcomes as such.
 
-- `product/YYYY-MM-DD-weak-spots.md`
-- `weekly/YYYY-MM-DD-week-20-stronger.md`
+- `product/YYYY-MM-DD-support-note.md`
+- `weekly/YYYY-MM-DD-week-20-drop-in.md`
 
 ## Tasks
 
-- "Fix <weak spot>": product, one per fix they own, due before your next lab.
+Only the agreed follow-ups, each with its person and date. If waiting for support, "Bring <question> to the supported drop-in"; if a fix is ready, "Repeat <journey> after <change>". No tasks when nothing remains. Do not turn the drop-in into mandatory solo technical homework.
 
 ## Close
 
-Keep the same check sources and outcomes in your close as in the saved notes. Never say a practice check happened on the hosted address, or an accepted problem was fixed.
-
-When you have done it, type /did-it.
+Keep the same sources and outcomes as the notes. If a follow-up was agreed, the door is /did-it. If none, say there is no follow-up task and name where the support note was saved or is waiting.
 
 ## If they have nothing to hand
 

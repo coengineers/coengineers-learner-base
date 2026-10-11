@@ -3,7 +3,7 @@ name: start-week-21
 description: Runs the CoEngineers Week 21 lab. The founder plans a small paid trial run (a pilot) with a size, an end date and weekly measures, and invites the first people. Use when they type start week 21.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
   week: "W21"
   course: "Ship"
   author: "CoEngineers"
@@ -15,7 +15,7 @@ Read `references/lab-rules.md` first and follow its eight steps. If the installe
 
 ## Before you start
 
-Find the founder's second brain (`GitHub:search_repositories`, query `user:@me second-brain`). Read `product/PRD.md`, the launch record, the weak-spots page, `offer/OFFER.md` and the asks from Week 11 (`offer/`). Read the contacts in their task list (the CoEngineers CRM) who said yes or not now. If the app is not online, send them to the Week 19 lab first.
+Find the founder's second brain (`GitHub:search_repositories`, query `user:@me second-brain`). Read `product/PRD.md`, the launch record, the Week 19 change/retest notes and Week 20 support note, `offer/OFFER.md` and the asks from Week 11 (`offer/`). Read the contacts in their task list (the CoEngineers CRM) who said yes or not now. If the app is not online, send them to the Week 19 lab first.
 
 A working free test address counts as online for planning the pilot. Do not require a bought web address or a launch record to make the plan. Keep every unresolved member-safety step visible, and keep invitations and the paid pilot waiting for those steps; a plan is not proof that anyone was invited or paid.
 
@@ -23,9 +23,9 @@ A working free test address counts as online for planning the pilot. Do not requ
 
 ## Check-in
 
-Read the Week 20 "Fix <weak spot>" tasks. Anything open that could hurt a member is settled before anyone is invited.
+Read the Week 20 agreed support follow-up tasks. Anything open that could hurt a member is settled before anyone is invited.
 
-From the Week 20 What happened section: the weak spots fixed and whether the recheck passed.
+From the Week 20 What happened section: what support resolved, what the repeats showed and what is still waiting.
 
 ## Decisions (two rounds at most)
 

@@ -3,7 +3,7 @@ name: feature-builder
 description: Builds one planned feature into the founder's app, in Claude Code on the web, one small step at a time, each tried by the founder before the next. Use in the Week 15, 16 and 17 labs.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
   week: "W16"
   course: "Ship"
   author: "CoEngineers"

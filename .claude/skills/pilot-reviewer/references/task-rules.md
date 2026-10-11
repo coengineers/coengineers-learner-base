@@ -2,6 +2,8 @@
 
 Every real-world step the founder commits to becomes one task in the CoEngineers CRM, through the `CoEngineers CRM` connector.
 
+Course/lab improvement feedback is an email draft to ed@coengineers.ai for the learner to send, never a CRM task or comment. A learner saying "skip" creates no feedback. Business improvement tasks remain ordinary dated tasks.
+
 ## Writing a task (`create_task`)
 
 - **title**: starts with a verb and names the person or thing. "Ask Sam Patel to try the prototype", not "Prototype test".

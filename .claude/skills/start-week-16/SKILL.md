@@ -3,7 +3,7 @@ name: start-week-16
 description: Runs the CoEngineers Week 16 lab. The founder builds the second feature without breaking the first, and checks both. Use when they type start week 16.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
   week: "W16"
   course: "Ship"
   author: "CoEngineers"
