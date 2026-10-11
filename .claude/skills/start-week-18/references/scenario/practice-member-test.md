@@ -10,6 +10,6 @@ All of this is Chilli's, for practice only. Results are marked "Simulated for th
 
 **Jo W. ran the script** on her phone, with John watching and taking notes in her words. She had never seen the app.
 
-- **Five problems.** One serious (the join link had expired and she could not get in), two annoying, two cosmetic.
-- **The call:** the serious one fixed; two annoying ones fixed; the cosmetic ones accepted with a reason ("does not stop anyone").
-- **Re-test:** Jo repeated the join step and it worked. Only then was it ticked as fixed (Simulated for the course).
+- **Five problems found.** One serious (the join link had expired and she could not get in), two annoying, two cosmetic.
+- **The grades and the call** (the founder's, in the lab): the serious one graded serious, to change; the two annoying ones graded annoying, to change; the two cosmetic ones accepted with a reason ("does not stop anyone").
+- **Nothing was fixed this week.** The list of graded changes, with what would show each one worked, goes to Week 19. Only then are the changes made and tried again (Simulated for the course).

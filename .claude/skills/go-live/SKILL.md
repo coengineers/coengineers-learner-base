@@ -1,9 +1,9 @@
 ---
 name: go-live
-description: Puts the app and landing page on the founder's chosen address, with checks and a way back, separate from opening the doors. Use for optional launch work or supported setup.
+description: Puts the app and landing page on the founder's chosen address, with checks and a way back, separate from opening the doors. Use in the Week 19 lab, or for supported setup.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.1"
+  version: "2.0.2"
   week: "W19"
   course: "Ship"
   author: "CoEngineers"
@@ -42,7 +42,7 @@ Before handing over, read the checks on the change (the green tick or red cross 
 
 ## Inputs
 
-- `product/app-map.md`, `product/PRD.md`, the latest `product/*-member-test.md` (its serious problems must be fixed or accepted), `offer/OFFER.md`, the one-page summary, `brand/DESIGN.md` and `business/` (name, who runs it, country, a privacy contact).
+- `product/app-map.md`, `product/PRD.md`, the latest `product/*-change-plan.md` and `product/*-change-retests.md` (every serious problem must have a passed repeat in the retests, or be accepted with a reason in the plan), `offer/OFFER.md`, the one-page summary, `brand/DESIGN.md` and `business/` (name, who runs it, country, a privacy contact).
 - The founder's answers in the lab.
 
 ## What you make
@@ -54,11 +54,11 @@ Before handing over, read the checks on the change (the green tick or red cross 
 
 ## Steps
 
-1. Read the inputs. Say in one line what you found, and stop if a serious problem is still open.
+1. Read the inputs. Say in one line what you found, and stop if a serious problem in the change plan has no passed repeat in the change retests and is not accepted with a reason.
 2. Agree the address. With none of their own, the free address where the app lives online works today; buying one is the founder's decision and payment. Never buy it.
 3. Build the launch changes as one change waiting for their yes: the two pages, the error log on, the settings pointing at the real address, and the landing page.
 4. **The six account steps, one at a time, waiting for "done"**, as a guided sitting: choose the free app address, a domain already owned, or a new domain the founder buys only if they choose; connect an owned domain only if chosen (preserve existing email records and verify secure connection, then sign-in return links; it can take a few hours, so keep the working app address meanwhile); put the app there with Claude Code, with the second free database project, its keys in the secret settings where the app lives and sign-in told the real address; set up the emails the app sends; add the short page on how members' details are kept safe; keep a saved copy of members' details. If a step will not work after one more try, mark it Not yet with the reason, carry on with any step that does not depend on it, and point them to the weekly drop-in. If the address will not connect today, go live on the nearest working address and record which and why.
-5. Make the named release (for example "Version 1.0, 30 September") and put it on the real address. The test address keeps following the latest version.
+5. Make the named release (for example "Version 1.0, <the date it goes live>") and put it on the real address. The test address keeps following the latest version.
 6. Run the checks on the real address (`references/method.md`), with one made-up account, removed afterwards.
 7. **Going back.** Once the app is online, give the exact steps to put the last good version back, in the order the founder would do them, and walk them through it once so the steps are practised, not guessed. Write down those steps, who decides, how long to try a fix first, and a drafted note to members. The first release has nothing earlier to go back to: then the practised step is putting up a short "back soon" page, and you say so. If the app is not online, write "To be written and practised when the app is online". Never write return steps that were not done.
 8. **The doors.** Ask: open now, or on a date? Record only the founder's words. Never announce, invite or send anything.
