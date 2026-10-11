@@ -9,6 +9,13 @@ concurrency:
   group: verify-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  # The vendored Ship skills must match their manifest; they change only by running scripts/vendor-ship-skills.py.
+  skills:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/vendor-ship-skills.py --check
   # The quick half: formatting, types, unit tests, a build, the secret scan and the package audit.
   source:
     runs-on: ubuntu-latest

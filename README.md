@@ -17,6 +17,8 @@ Your copy must be **private**, so only you can see your app's code.
 
 That copy is yours. You choose who can see it or change it.
 
+**First change to make in your copy:** open `apps/web/src/brand.ts` (or ask Claude Code to) and change three fields, `name`, `appLabel` and `topBarLabel`, from "Your app" to your own app's name. Until you do, your sign-in page shows the neutral "Your app" placeholder. Logo and colours come later; see [docs/BRANDING.md](docs/BRANDING.md).
+
 ## 2. Let Claude Code see it
 
 Claude Code is the building tool. It can only work on the copies you allow.
@@ -30,9 +32,9 @@ You only do this once.
 
 ## 3. Your app's accounts session
 
-Your app needs two more free things before it can go online: a place to keep your members' details (Supabase) and a place for the app to live online (Cloudflare). You set these up in the live session called Your app's accounts, with John on the call and Claude doing the joining up.
+Your app needs two more free things before it can go online: a place to keep your members' details (Supabase) and a place for the app to live online (Cloudflare). You create and own both accounts yourself in Week 12's Do. The live session called Your app's accounts only joins them up, with Claude doing the joining up and John on the call.
 
-Before the session: do steps 1 and 2 above. In the session you type `/start-app-setup` in Claude and follow it. At the end your app opens at its own free test address and you can sign in to it.
+Before the session: do steps 1 and 2 above and have both accounts from Week 12. In the session you type `/start-app-setup` in Claude and follow it. At the end your app opens at its own free test address and you can sign in to it.
 
 Free plans only. You never need a card. If a page asks for one, stop and tell John.
 

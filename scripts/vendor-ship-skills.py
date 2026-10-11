@@ -32,6 +32,23 @@ def changed_since_vendored(output: Path, receipt: Path):
     return changed
 
 
+def check(destination: Path):
+    """Read-only drift check for CI: the installed skills must match the manifest, byte for byte."""
+    destination = destination.resolve()
+    receipt = destination / ".claude" / "ship-skills-manifest.json"
+    if not receipt.is_file():
+        raise ValueError("No .claude/ship-skills-manifest.json: the vendored skills have no receipt.")
+    manifest = json.loads(receipt.read_text())
+    if manifest["skills"] != SKILLS:
+        raise ValueError("The manifest's skill list differs from SKILLS in scripts/vendor-ship-skills.py.")
+    drift = changed_since_vendored(destination / ".claude" / "skills", receipt)
+    if drift:
+        raise ValueError(f"{len(drift)} vendored skill file(s) differ from the manifest (edited, added or missing): "
+                         + ", ".join(drift[:10]) + ". Skills are changed only by running this script against the plugin.")
+    print(f"Vendored Ship skills match the manifest: {len(SKILLS)} skills / {len(manifest['files'])} files, "
+          f"plugin {manifest['version']} at {manifest['sourceCommit']}.")
+
+
 def vendor(source: Path, destination: Path, replace: bool = False):
     source = source.resolve()
     destination = destination.resolve()
@@ -88,9 +105,19 @@ def vendor(source: Path, destination: Path, replace: bool = False):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("source", type=Path, help="Clean reviewed plugin checkout")
+    parser.add_argument("source", type=Path, nargs="?", help="Clean reviewed plugin checkout")
+    parser.add_argument("--check", action="store_true",
+                        help="Only check that the installed skills match the manifest (no plugin checkout needed)")
     parser.add_argument("--destination", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--replace", action="store_true",
                         help="Replace skills brought in earlier, if nobody has edited them since")
     args = parser.parse_args()
-    vendor(args.source, args.destination, args.replace)
+    try:
+        if args.check:
+            check(args.destination)
+        elif args.source is None:
+            parser.error("a plugin checkout is required unless --check is used")
+        else:
+            vendor(args.source, args.destination, args.replace)
+    except ValueError as error:
+        raise SystemExit(f"error: {error}")
