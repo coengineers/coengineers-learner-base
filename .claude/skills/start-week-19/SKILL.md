@@ -1,80 +1,74 @@
 ---
 name: start-week-19
-description: Runs the CoEngineers Week 19 lab. The app and its sales page go online together at the founder's real web address, apart from opening the doors. Use when they type start week 19.
+description: Runs the CoEngineers Week 19 lab. The founder plans changes from member tests, builds and retests them, with an optional web address step. Use when they type start week 19.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.0"
+  version: "3.0.0"
   week: "W19"
   course: "Ship"
   author: "CoEngineers"
 ---
 
-# Week 19 lab: Put it live
+# Week 19 lab: Make and retest the changes
 
-Read `references/lab-rules.md` first and follow its eight steps. If the installed reference files cannot be opened, read the same files from the founder's approved app with `GitHub:get_file_contents`: `.claude/skills/start-week-19/references/lab-rules.md`, `save-rules.md` and `task-rules.md` in that same folder. Find the app from the founder's context or app map. Use this read-only fallback before asking the founder to locate files. If neither copy can be read, name the missing rules and stop before any write. This page gives the week's details. Putting it online is done by the `go-live` skill, and the landing page by the `offer-website-builder` skill. This lab takes longer than the others: a few hours, not 30 minutes.
-
-**Your first reply opens with these three lines, in this order, in every run, before anything else:** the "To have to hand:" line; "This lab takes a few hours, in one or two sittings."; and "You can stop after any step and carry on later by typing start week 19 again." The lab makes the checklist and takes the six account steps as one guided sitting.
+Read `references/lab-rules.md` first and follow its eight steps. If the installed reference files cannot be opened, read the same files from the founder's approved app with `GitHub:get_file_contents`: `.claude/skills/start-week-19/references/lab-rules.md`, `save-rules.md` and `task-rules.md` in that same folder. Find the app from the founder's context or app map. Use this read-only fallback before asking the founder to locate files. If neither copy can be read, name the missing rules and stop before any write. This page gives the week's details. Use `feature-planner`, `feature-builder` and `feature-checker` for the agreed changes. About 30 minutes for the plan and first change; further changes and member retests may need another sitting. The founder can resume with start week 19.
 
 ## Before you start
 
-Find the founder's second brain (`GitHub:search_repositories`, query `user:@me second-brain`). Read `product/app-map.md`, the Week 18 test results, `product/PRD.md`, `offer/OFFER.md`, the one-page summary and `brand/DESIGN.md`. If the serious problems from Week 18 are not fixed or accepted, send them to that lab first.
+Read the second brain's `product/app-map.md`, Week 18 member-test results and proposed changes, `product/PRD.md` (the Week 13 Plan), `brand/DESIGN.md` and earlier feature checks. Unfixed Week 18 problems are inputs to this lab, not a reason to send them back. If results are missing, offer the Week 18 test or work from clearly named observations; never invent a test result.
 
-**Bring:** the web address they have chosen, and their sign-ins from Your app's accounts.
+**Bring:** the Week 18 change list, the app's working address and someone to repeat the affected member steps. A bought domain is not required.
 
 ## Check-in
 
-Read the Week 18 "Fix or accept <problem>" tasks. A serious one still open stops the launch.
-
-From the Week 18 What happened section: each problem, fixed or accepted, and why.
+Read "Agree the changes from your member test" and its What happened notes. Distinguish proposed changes, accepted problems and support needs. An accepted problem is not a fix, and a task marked done is not proof of a working change.
 
 ## Decisions (two rounds at most)
 
-1. **Your web address and the landing page.** Which web address the app and page will use (draft: their own, with the app on it), and which words on the landing page change now that the app is real. Draft from the one-page summary.
-2. **Who decides to go back, and the doors.** Who decides to go back if something breaks. Nothing else about going back is decided or drafted here: no fix time, no "back soon" page, no steps, even if older notes hold them (see The way back). Then always ask, in every run and even if nothing goes online today: "What date will you open the doors?" Take a date, or "Not yet" with why and a date to decide again. Putting it online and opening the doors (letting people in) are separate.
+1. **The change plan.** For each selected Week 18 problem, draft: what happened, what will change, what stays the same, and the observable repeat test. Prioritise harm to members. Agree a manageable first change; date the rest or record why a problem is accepted. Keep serious unresolved issues visible and joining closed.
+2. **The repeat and the address.** Who repeats each affected journey, on which device and when. Ask whether to keep the free app address, connect a domain they already own, or buy one themselves. Recommend keeping the working address while fixing the app; the learner chooses. Domain work is optional and never blocks the change cycle.
 
 ## Artifact
 
-Build in Claude Code, the building tool, as in Week 16 (open https://claude.ai/code, choose your app, and add your second brain with the + button), with the sentence: "First bring my app’s copy up to date with the changes I have approved. Read the current skill from that copy before using it. Use the go-live skill to put my app and landing page live." Claude guides each account step; the founder signs in and does the ones only the owner can, and never types a password or secret code into the chat.
+Build in Claude Code, the building tool (say it like that the first time, then just Claude Code). Tell the founder: open https://claude.ai/code, choose your app, and add your second brain with the + button. Before the handover, look at the app for changes still waiting for their yes (`GitHub:list_pull_requests` on the app the app map names). If last week's is waiting, say so and ask them to approve it first or agree to build on top of it. Start the pasted handover with "First bring my app’s copy up to date with the changes I have approved. Read the current skill from that copy before using it." Then give them the skill sentence, with the text below it that the lab hands over: a line starting "Change only:" that names exactly what was agreed (name the tests that check those words too, if the words change); "Leave everything else as it is. Do not change my second brain. Set no reminders."; and "When you finish, end with these five lines for me to copy back: Built: / Left: / Checks: / Still waiting for my yes: / New weak spots noticed: (each one, or none)." Claude Code works from the copy of the skills kept in the app, which can be older than these rules, so the pasted text must carry all of this every time. If what they paste back has no such five lines, say so and ask them to ask Claude Code for them. Their job is to decide what it does and whether it is right. Say how they will see it: nothing is online until they press the green button on the app's change; only if the app map confirms updates are automatic, the test address updates after that. Otherwise say "ask whoever set up your online home to update it". When Claude Code has opened the change, they paste its hand-back block here and say "built"; the phone check is their step after the lab. If the block says the app already does this, say so, and use the lab to check it against the done test instead of calling it built. Read the block: say which change to approve, add any new weak spot to the notes and ask whether it becomes a task. This lab saves the notes; Claude Code opens no change to the second brain, and if it did, say so and ask them to close that one.
 
-Always make the Launch checklist page and show it before the save, even if some steps are "Not yet". What they get is the Launch checklist page: every step ticked or still to do, the web address, how to go back, and the doors' date.
+The sentence: "Plan the agreed Week 18 changes with feature-planner, implement them with feature-builder and retest them with feature-checker. Change only the items listed below." Include each observation, proposed change and repeat test. Never hand over optional launch work unless the founder chose it.
 
-## The six account steps (a guided sitting)
+After the change is approved and the working address updates, the founder or named tester repeats each affected step. Ask for what they actually saw. Recheck the earlier journeys too. Show a Changes and retests page with: proposed, implemented but not retested, passed repeat, failed repeat, accepted with reason, or needs support. Record the check's source (practice copy, hosted address or real member); a simulated result stays labelled simulated. Nothing is Fixed until its repeat passes.
 
-After the decisions, take these in order, one at a time. Never list all six as one message and never hand all six to Claude Code as one job: give step 1 alone, wait for "done", then step 2. Say what the step is and about how long it takes, wait for "done", then say what it did. There is no purchase to test in this lab: never mention a test purchase. The founder does the parts only the owner can and never types a password or secret code into the chat. Nothing is bought or switched on for them.
+## Optional address and launch support
 
-1. Buy your web address (about 15 minutes). The founder buys it; you only say where and what to look for.
-2. Connect it to your app and landing page (about 30 minutes, then up to a few hours before it works). Carry on with step 3 while it settles, and come back to check.
-3. Put your app there, with Claude Code (about an hour).
-4. Set up the emails your app sends, such as the one that welcomes a new member (about 30 minutes).
-5. Add the short page on how you keep members' details safe (about 30 minutes).
-6. Keep a saved copy of members' details, so nothing is lost (about 30 minutes).
+- **Keep the app address:** copy the working address from the app map, open it securely, check sign-in and the main journey and record that this is the chosen address. No purchase.
+- **Existing domain:** confirm the learner owns it and can open its provider settings. With `go-live`, add the chosen domain in the app hosting settings, follow the records that provider actually shows and preserve existing email records. The learner approves the changes in their own account. Wait for secure connection status, open the address, check sign-in return links and the main journey, then record it. Keep the working app address until these pass.
+- **New domain:** the learner checks availability, first-year and renewal cost at their chosen provider, buys it themselves only if they choose, then follows the existing-domain route. Never buy, enter card details or assume a purchase. If it will not connect, keep the free address and bring the exact stuck step to the supported drop-in.
 
-**Stuck path.** If a step will not work, or the founder will not do it today, ask what they see (a screenshot is best) and try one different way. If it still will not work, mark that one step "Not yet" with the reason on the checklist and carry on with every step that does not depend on it. Only step 2 needs step 1. Steps 3 to 6 can go ahead on the app's free address without a bought web address, so never drop the rest because step 1 was refused. Tell them to bring the stuck step to the weekly drop-in. Never leave them waiting with nothing to do.
-
-**The way back.** Once step 3 has put the app online, ask Claude Code for the exact steps to put the last good version back, have the founder practise them once there, and save those steps, as they were done, in the launch note. If the app is not online yet, write "The way back: to be written and practised when the app is online" on the checklist and in the note. Never save or promise return steps that have not been done: no rule such as "try a fix for an hour, then a back soon page", in the checklist, the launch note or the weekly summary, and take such a line out of an older note you are updating. Never say you will write the steps later; say "when the app is online, type start week 19 again and we write and practise them then". Asked "how do I go back?" before the app is online, say only that.
+Launch readiness remains separate: use `go-live` only if chosen, for the landing page, confirmation/recovery emails, approved privacy wording, backup/recovery checks and a practised way back. Record anything not done as Not yet. If the app is not online, ask for setup support; do not claim hosted checks. Invite nobody and open no joining until the relevant checks and founder approval are complete. Keep the doors' date, or Not yet with a reason, separate from the address choice.
 
 ## Criteria
 
-- The real address works (your own web address opens the app).
-- The landing page and the app are both live.
-- You know how to go back.
-- Opening the doors has its own date.
+- Each agreed change answers a Week 18 observation.
+- The plan says what success looks like before implementation.
+- Implemented changes have a recorded repeat result, or say not retested yet.
+- Earlier working journeys still pass, or the failure is recorded.
+- Unresolved issues and support needs have an owner and next step.
 
 ## Records
 
 Before any GitHub write, read `references/save-rules.md` and follow its five steps. Prepare and read back the notes on a new branch, then give the named comparison link with the verified branch, title and body. The founder puts the change forward there and saves it with the two green buttons. Never call `GitHub:create_pull_request`, refer to a form or Submit, or describe an already opened change as still needing to be put forward. The notes are prepared until the founder approves and the saved notes are read back. Read the saved notes before making tasks, and never repeat successful task writes on a retry.
 
-- `product/YYYY-MM-DD-launch-record.md`
-- `offer/YYYY-MM-DD-landing-page.md`
-- `weekly/YYYY-MM-DD-week-19-live.md`
+- `product/YYYY-MM-DD-change-plan.md`, with the observations and agreed changes.
+- `product/YYYY-MM-DD-change-retests.md`, with before/after, tester, date, source and actual result.
+- `product/app-map.md` only if the chosen address or update method changed.
+- `weekly/YYYY-MM-DD-week-19-changes.md`, including optional-domain choice and drop-in needs.
 
 ## Tasks
 
-- "Open your live address on your phone and set your open date": admin, due before your next lab. Done when the address opens on their phone and they have chosen a date to open the doors (or written "Not yet" and why). If nothing is online at the end of the lab, the title is exactly "Finish putting your app online and set your open date", and its STEPS list each account step still to do, by name. Never a title about opening a live address while there is none; retitle an older task the same way.
+- "Repeat <changed journey> with <name>": product, only if its repeat is still to do, due before the next lab.
+- "Bring <stuck step> to the supported drop-in": product, only when support is needed, with the observed problem and the learner's chosen date. Do not create a domain purchase task if they chose the free address.
 
 ## Close
 
-When you have done it, type /did-it.
+When you have done it, type /did-it. If support is needed, the close names the agreed drop-in task and date without claiming a booking.
 
 ## If they have nothing to hand
 

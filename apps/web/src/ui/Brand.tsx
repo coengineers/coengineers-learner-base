@@ -1,10 +1,21 @@
 import { brand } from "../brand";
-export function Brand({ compact = false }: { compact?: boolean }) {
+export function Brand({
+  compact = false,
+  showName = false,
+}: {
+  compact?: boolean;
+  showName?: boolean;
+}) {
   return (
     <span className={"brand-identity " + (compact ? "compact" : "")}>
-      {brand.logoUrl ? (
-        <img className="brand-logo" src={brand.logoUrl} alt={brand.name} />
-      ) : (
+      {brand.logoUrl && (
+        <img
+          className="brand-logo"
+          src={brand.logoUrl}
+          alt={showName ? "" : brand.name}
+        />
+      )}
+      {(!brand.logoUrl || showName) && (
         <span className="wordmark">
           {brand.wordmarkAccent &&
           brand.name.startsWith(brand.wordmarkAccent) ? (

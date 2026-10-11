@@ -3,7 +3,7 @@ name: uat-builder
 description: Writes the script a fresh tester follows on the founder's app, grades every problem by how much it hurts and makes the test results page. Use in the Week 18 lab.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
   week: "W18"
   course: "Ship"
   author: "CoEngineers"
@@ -30,7 +30,7 @@ Read the founder's `skills/uat-builder.md` in their second brain if it exists: i
 ## What you make
 
 1. **The script.** Steps a member takes, in plain words, one action each, from opening the app to the last thing the plan promised: get in, find this week's job, do the main thing, see what stays private, and what happens when access ends. Under each step, what should happen. It never tells the tester how to do it, only what to achieve. Made for a made-up tester account, removed afterwards.
-2. **The Test results page.** One self-contained page in the founder's Claude account, in their brand. Readable on a phone, no downloads. It shows: the tester (first name, how they fit the members you want, the date), each step ticked or crossed, every problem with its grade, and the fix-or-accept call for each. A problem is "Fixed" only after the tester has repeated that step.
+2. **The Test results page.** One self-contained page in the founder's Claude account, in their brand. Readable on a phone, no downloads. It shows: the tester (first name, how they fit the members you want, the date), each step ticked or crossed, every problem with its grade, and the proposed change, accepted reason or support need for each. A problem is "Fixed" only after the tester has repeated that step.
 3. **`product/YYYY-MM-DD-member-test.md`**: the same content as the page, with quotes in the tester's words.
 
 ## Grades
@@ -44,7 +44,7 @@ Read the founder's `skills/uat-builder.md` in their second brain if it exists: i
 1. Read the plan and the checks; draft the script from the promised journeys. The founder changes it.
 2. The tester follows it while the founder watches and writes down what happened at each step, in the tester's words. The founder does not help. Before drafting results, ask for the tester's words for each step. A missing note stays Unknown, including on a simulated test. Earlier checks and earlier tester notes are not results of this test: keep them separate. Never fill a step with what the plan says should happen or assign an earlier fault to a tester who did not report it. A simulated result needs the founder's explicit simulated note too.
 3. Draft each problem and its grade from the notes. The founder corrects the grades.
-4. For each serious or annoying problem: fix or accept, with a reason. Every serious one is fixed or accepted with the reason written. Fixes are made in Claude Code as in Week 16.
+4. For each serious or annoying problem: identify the proposed change and what the repeat should show, or record an accepted reason or support need. Week 18 identifies changes; Week 19 plans, implements and retests them in Claude Code. Do not require a fix in Week 18 or before Week 19 starts.
 5. Nothing is marked fixed until the tester repeats that step and it works. Until then it reads "Fix made, not re-tested".
 6. Build the page, show it, one round of changes.
 
@@ -52,7 +52,7 @@ Read the founder's `skills/uat-builder.md` in their second brain if it exists: i
 
 - A fresh tester (someone who had not seen the app) followed the script.
 - Every problem has a grade, from the notes.
-- The worst are fixed or accepted, each with a reason.
+- Each serious or annoying problem has a proposed change with a repeat check, an accepted reason or a support need.
 - Nothing reads Fixed without a re-test.
 - The page and the record agree. No tester is described doing anything that is not in the founder's notes.
 

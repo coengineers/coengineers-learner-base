@@ -3,7 +3,7 @@ name: feature-planner
 description: Plans one feature of the founder's app, with its steps, what a member sees, what stays private and the done test they decide before building. Use in the Week 15, 16 and 17 labs.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
   week: "W15"
   course: "Ship"
   author: "CoEngineers"
@@ -41,7 +41,7 @@ Read the founder's `skills/feature-planner.md` in their second brain if it exist
 7. **By hand for now**: what the founder does themselves, and when.
 8. **Not in this feature**: what waits, from the plan.
 
-For payments and access (Week 17), also: paid once means in once; not paid means not in; the same sale twice lets nobody in twice; a member who cancels keeps access to the end of the month they paid for, and a refunded member loses access at once; and every step the founder does by hand, written down.
+For payments and access (Week 17), first confirm membership or pay-as-you-go from the lab; if absent, offer both and wait. Membership buys an agreed period: cancellation stops renewal and access lasts to the paid-through date. Pay-as-you-go buys the confirmed item, session, uses or bundle, with the agreed consumption and expiry rules; it does not imply a subscription. Confirm what a refund removes without revoking unrelated purchases. In both routes: unpaid grants nothing, the same payment notice twice grants nothing twice, and every by-hand step is written down. Test the chosen rules, never a default calendar-month membership.
 
 ## Method
 

@@ -13,6 +13,9 @@ test("hosted users can sign in and request recovery without GitHub", async ({
   });
   const fixture = JSON.parse(await readFile(".local/reviewer.json", "utf8"));
   await page.goto("/");
+  // Identity stays beside the form even when the story panel is hidden on phones.
+  await expect(page.locator(".auth-card .brand-identity")).toBeVisible();
+  await expect(page.locator(".auth-card .wordmark")).not.toBeEmpty();
   await expect(
     page.getByRole("button", { name: "Continue with GitHub" }),
   ).toHaveCount(0);
@@ -25,6 +28,7 @@ test("hosted users can sign in and request recovery without GitHub", async ({
   await expect(
     page.getByRole("button", { name: "Create account", exact: true }),
   ).toBeVisible();
+  await expect(page.locator(".auth-card .brand-identity")).toBeVisible();
   await expect(
     page.getByText(
       "Use at least 12 characters and a password unique to this app.",
@@ -42,6 +46,7 @@ test("hosted users can sign in and request recovery without GitHub", async ({
   await expect(page.getByLabel("New password", { exact: true })).toBeVisible();
   await page.getByRole("button", { name: "Sign out" }).click();
   await page.getByRole("button", { name: "Forgot password?" }).click();
+  await expect(page.locator(".auth-card .brand-identity")).toBeVisible();
   await page
     .getByLabel("Email address")
     .fill("g13-recovery-check@example.test");

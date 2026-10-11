@@ -3,7 +3,7 @@ name: pilot-reviewer
 description: Plans the founder's small paid pilot with a size, an end date, weekly measures and one change per round, sets up invitations, and reviews each round. Use in the Week 21 lab and each pilot week after.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
   week: "W21"
   course: "Ship"
   author: "CoEngineers"
@@ -24,7 +24,7 @@ Read the founder's `skills/pilot-reviewer.md` in their second brain if it exists
 ## Inputs
 
 - The task list (`CoEngineers CRM:list_contacts`, `get_contact`, `list_tasks`, `get_task`): the people who said yes or not now in Week 11, and, on a review, the "Pilot check-in" task comments and contact notes.
-- `product/PRD.md`, the latest launch record, the weak-spots page, `offer/OFFER.md` and `brand/DESIGN.md`.
+- `product/PRD.md`, the latest launch record, the Week 19 change/retest notes and Week 20 support note, `offer/OFFER.md` and `brand/DESIGN.md`.
 - On a review, the newest `product/pilot/*-pilot-plan.md`.
 - The founder's answers in the lab. A number with no source is Unknown: ask, never guess.
 

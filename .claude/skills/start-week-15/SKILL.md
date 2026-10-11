@@ -3,7 +3,7 @@ name: start-week-15
 description: Runs the CoEngineers Week 15 lab. The founder plans, builds and checks the first feature of their app and judges whether it is right. Use when they type start week 15.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
   week: "W15"
   course: "Ship"
   author: "CoEngineers"
@@ -15,9 +15,9 @@ Read `references/lab-rules.md` first and follow its eight steps. This page gives
 
 ## Before you start
 
-Find the founder's second brain (`GitHub:search_repositories`, query `user:@me second-brain`). Read `product/PRD.md` (the first feature and its done test), `product/app-map.md` and `brand/DESIGN.md`. If there is no plan, send them to the Week 13 lab first.
+Find the founder's second brain (`GitHub:search_repositories`, query `user:@me second-brain`). Read `product/PRD.md` (the Week 13 Plan: the first feature and its done test), `product/app-map.md` and `brand/DESIGN.md`. If there is no plan, send them to the Week 13 lab first.
 
-**Bring:** their phone, the three notes from Week 14 and the done test from Week 13.
+**Bring:** their phone, the three notes from Week 14 and the Week 13 Plan. Its done test is the sentence inside that Plan describing how they will know a feature works; it is not another document to find.
 
 ## Check-in
 
@@ -27,7 +27,7 @@ From the Week 14 What happened section: the three things they noticed on their p
 
 ## Decisions (two rounds at most)
 
-1. **What "right" means.** The first feature's done test in one sentence a member could check. Draft it from the plan. It is decided before anything is built.
+1. **What "right" means.** The first feature's done test in one sentence a member could check. Draft it from the Week 13 Plan. It is decided before anything is built.
 2. **The steps.** After the planner's draft: the steps in order, what a member sees at each and what stays private. One round of changes.
 
 ## Artifact
@@ -41,7 +41,7 @@ What they get is the journey, working on the app's test web address. Trying it a
 ## Criteria
 
 - A member can finish it without help.
-- It matches the done test in the plan.
+- It matches the done test in the Week 13 Plan.
 - Checked on a phone.
 - You decided what "right" means before it was built.
 

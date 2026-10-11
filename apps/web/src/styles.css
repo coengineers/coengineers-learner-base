@@ -909,6 +909,17 @@ main {
   max-width: 390px;
   width: 100%;
 }
+.auth-brand {
+  padding: 0;
+  margin-bottom: 30px;
+}
+.auth-brand .brand-identity {
+  max-width: 100%;
+}
+.auth-brand .wordmark {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
 .auth-card > .preview-badge {
   margin-bottom: 40px;
 }
@@ -1190,8 +1201,7 @@ main {
     display: block;
   }
   .auth-story {
-    padding: 25px;
-    background: var(--chrome);
+    display: none;
   }
   .auth-story-content,
   .auth-credit {

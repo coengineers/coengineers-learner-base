@@ -3,7 +3,7 @@ name: feature-checker
 description: Checks a built feature on the founder's test address as a member would, on a phone, including what must stay private, and re-checks earlier journeys. Use in the Week 15, 16 and 17 labs.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
   week: "W15"
   course: "Ship"
   author: "CoEngineers"
@@ -55,7 +55,7 @@ Use practice members only, made for the check and removed after.
 3. **Something going wrong**: a wrong password, a lost connection, an empty list. What does a member see, and can they recover?
 4. **What stays private**: a second member and a signed-out visitor each try to see or change what is not theirs. Each is refused.
 5. **Earlier journeys**: run each again. Anything that used to work and now does not is the most important finding.
-6. **Payments and access** (Week 17): pay or be added, get in, use it, lose access. The same sale twice lets nobody in twice. Not paid means not in. A member who cancels keeps access to the end of the month they paid for; a refunded member loses it at once. The founder checks only the payment page (it opens, shows the right price and what members get); nobody buys, cancels or refunds. Every step the founder does by hand is written down.
+6. **Payments and access** (Week 17): pay or be added, get in, use it, lose access. The same sale twice lets nobody in twice. Not paid means not in. Use the chosen model from the plan. Membership cancellation stops renewal but keeps access to the agreed paid-through date. Pay-as-you-go grants only the bought item, session or uses, with the agreed consumption/expiry rule and no recurring charge. Test the agreed refund rule without removing unrelated purchases. If the model is absent, ask before testing; never assume membership. The founder checks only the payment page (it opens, shows the right price and what members get); nobody buys, cancels or refunds. Every step the founder does by hand is written down.
 7. **Laptop size and keyboard**: quickly, after the phone.
 
 ## What you make

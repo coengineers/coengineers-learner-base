@@ -73,6 +73,9 @@ export function SignIn() {
       </section>
       <section className="auth-form-side">
         <div className="auth-card">
+          <a className="brand auth-brand" href="/">
+            <Brand showName />
+          </a>
           {config.local && (
             <span className="preview-badge">
               <span />

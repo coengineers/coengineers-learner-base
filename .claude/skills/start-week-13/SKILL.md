@@ -3,7 +3,7 @@ name: start-week-13
 description: Runs the CoEngineers Week 13 lab. The founder decides the smallest version of their app worth having, with a done test for each feature, and sets one task. Use when they type start week 13.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
   week: "W13"
   course: "Ship"
   author: "CoEngineers"
@@ -17,7 +17,11 @@ Read `references/lab-rules.md` first and follow its eight steps. This page gives
 
 Find the founder's second brain (`GitHub:search_repositories`, query `user:@me second-brain`). Read `offer/OFFER.md`, the Week 12 decision, `customers/` conversations, `product/` test notes and `product/app-map.md` (what the base app already does). If there is no app map yet, use the base app's standard list (sign-in, a profile, private files, the Claude doorway) and say so in one line; do not ask the founder what it does. If there is no offer, send them to the Week 12 lab first.
 
-**Bring:** last week's decision, the names of the people who said yes, and where they will take payments.
+**Bring:** last week's decision, the names of the people who said yes, and access to their own Supabase and Cloudflare accounts prepared in Week 12 Do.
+
+Start from learner-owned accounts. Confirm they can sign in to both dashboards and own them; never say CoEngineers made them. If either is missing, give the Week 12 Do account-preparation route and offer the accounts support session. Planning can continue with setup marked not yet, but do not claim an app has been connected.
+
+For the £1.50 activity, offer a promise to pay or a bank transfer arranged by the learner with the person directly. Record which route they choose and the real outcome: promised, reported paid, declined or not yet. A promise is not a payment. Never request bank details in chat or initiate a transfer. Say "Real payment setup is in Week 17; you do not need a payment page for this activity."
 
 ## Check-in
 
@@ -40,7 +44,7 @@ Never go straight to drafts.
 
 ## Artifact
 
-The Plan page (the builder makes it): the offer's lines in the three trays, up to three features each with a done test a member could check, what waits and why. In the founder's brand, readable on a phone.
+The Week 13 Plan page (the builder makes it): the offer's lines in the three trays, up to three features each with a done test a member could check, what waits and why. In the founder's brand, readable on a phone.
 
 ## Criteria
 
@@ -51,12 +55,12 @@ The Plan page (the builder makes it): the offer's lines in the three trays, up t
 
 ## Records
 
-- `product/PRD.md` (the plan for version 1, kept up to date)
+- `product/PRD.md` (the Week 13 Plan, kept up to date; each feature's done test is a line inside this Plan, not a separate document)
 - `weekly/YYYY-MM-DD-week-13-plan.md`
 
 ## Tasks
 
-- "Show the plan to <name>": product, linked to their contact, due before your next lab. Someone who fits the members you want.
+- "Show the plan to <name>": product, linked to their contact, due before your next lab. Someone who fits the members you want. If the £1.50 activity is agreed, include the chosen promise or learner-arranged bank-transfer route and record the outcome without treating a promise as money received.
 
 ## Close
 

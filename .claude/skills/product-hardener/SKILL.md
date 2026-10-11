@@ -3,7 +3,7 @@ name: product-hardener
 description: Finds and ranks what would hurt the founder's members most, security first, fixes the worst in Claude Code on the web and rechecks it as a member would. Use in the Week 20 lab.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
   week: "W20"
   course: "Ship"
   author: "CoEngineers"
@@ -15,7 +15,7 @@ In Claude Code, before reading inputs or changing the app, fetch the app's defau
 
 # Product hardener
 
-Makes the founder's app stronger where a fault would hurt members most. Security and hardening come first. Ranked by harm to members, never by effort. In a lab, it hands the records back for the lab to save. On its own, save with `references/save-rules.md`.
+Makes the founder's app stronger where a fault would hurt members most. In the Week 20 supported drop-in, use this only for a specific reliability or security concern the founder and helper agree to tackle. Do not launch a compulsory full audit or insist a fix happens in this session. Outside that drop-in, agree the review scope first. Security concerns come first within that scope. Ranked by harm to members, never by effort. In a lab, it hands the records back for the lab to save. On its own, save with `references/save-rules.md`.
 
 Read the founder's `skills/product-hardener.md` in their second brain if it exists: it holds their changes. It can change wording, order and emphasis, never the truth rules.
 
@@ -51,20 +51,20 @@ Before handing over, read the checks on the change (the green tick or red cross 
 1. **Sign-in.** Limits on wrong passwords, email confirmation, password recovery, how long someone stays signed in.
 2. **Who can see what.** A signed-out visitor, a signed-in non-member, a second member and a cancelled member each try to reach what is not theirs.
 3. **Where members' details and secret codes are kept.** Details only in the database, in the agreed region; no key or password in the code, the logs or the second brain; a scan for secrets left in the code and risky add-ons.
-4. **Payment and access staying in step.** A cancelled or refunded member loses access; the same sale twice lets nobody in twice; the shop's messages are checked as genuine.
+4. **Payment and access staying in step.** Use the agreed membership or pay-as-you-go model: cancellation keeps membership access to the paid-through date, purchases retain their agreed uses/expiry, and refunds affect only the agreed entitlement; the same sale twice lets nobody in twice; the shop's messages are checked as genuine.
 5. **A member-style retest** of every journey after the fixes.
 
 ## What you make
 
-1. **The Weak-spots page.** One self-contained page in the founder's Claude account, in their brand: each weak spot in plain words, who it would hurt and how, its rank, and what was done or decided. The top one fixed and rechecked. Readable on a phone, no downloads.
+1. **The Weak-spots page.** One self-contained page in the founder's Claude account, in their brand: each weak spot in plain words, who it would hurt and how, its rank, and what was done or decided. The selected concern resolved and rechecked, or awaiting support with a reason. Readable on a phone, no downloads.
 2. **`product/YYYY-MM-DD-weak-spots.md`**: the same content.
 
 ## Method
 
-1. Say what you found in one line. Look at each area, safely, on practice members only. Nothing real is touched, and nothing is tried on the real address that could change members' data.
+1. Say what you found in one line. In the drop-in look only at the agreed concern and directly affected checks; otherwise look at each agreed area, safely, on practice members only. Nothing real is touched, and nothing is tried on the real address that could change members' data.
 2. List the weak spots. Rank each by harm to members: how many, how badly, how likely. Ties broken by what is hardest to undo. Effort never ranks.
 3. Show the ranking. The founder confirms or moves it, with a reason.
-4. Fix the top one now, as a change waiting for their yes: they read it and press the green button. Then recheck it as the member it would have hurt, and say what you saw.
+4. If the founder and helper agree a fix is ready, fix the selected one, as a change waiting for their yes: they read it and press the green button. Then recheck it as the member it would have hurt, and say what you saw.
 5. For each other: a date, or accepted with a reason in the founder's words. Every "accepted" says who could be hurt.
 6. Build the page, show it, one round of changes.
 
@@ -78,8 +78,8 @@ Before handing over, read the checks on the change (the green tick or red cross 
 
 ## Checks before you hand back
 
-- Each of the four areas was looked at, or is listed as not looked at, with the reason.
-- The ranking is by harm, and the top one is fixed and rechecked.
+- The agreed concern and its affected checks were looked at, or listed as not checked with the reason. A broader review is not required for the drop-in.
+- Any ranking is by harm; the chosen concern has an actual repeat result or a support need.
 - The rest are dated or accepted, each with a reason.
 - The page and the record agree; British English, no em dashes.
 
