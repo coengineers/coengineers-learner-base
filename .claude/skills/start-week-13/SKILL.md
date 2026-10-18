@@ -15,7 +15,7 @@ Read `references/lab-rules.md` first and follow its eight steps. This page gives
 
 ## Before you start
 
-Find the founder's second brain (`GitHub:search_repositories`, query `user:@me second-brain`). Read `offer/OFFER.md`, the Week 12 decision, `customers/` conversations, `product/` test notes and `product/app-map.md` (what the base app already does). If there is no app map yet, use the base app's standard list (sign-in, a profile, private files, the Claude doorway) and say so in one line; do not ask the founder what it does. If there is no offer, send them to the Week 12 lab first.
+Find the founder's second brain (as the lab rules say). Read `offer/OFFER.md`, the Week 12 decision, `customers/` conversations, `product/` test notes and `product/app-map.md` (what the base app already does). If there is no app map yet, use the base app's standard list (sign-in, a profile, private files, the Claude doorway) and say so in one line; do not ask the founder what it does. If there is no offer, send them to the Week 12 lab first.
 
 **Bring:** last week's decision, the names of the people who said yes, and access to their own Supabase and Cloudflare accounts prepared in Week 12 Do.
 

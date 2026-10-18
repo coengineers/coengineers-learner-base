@@ -2,11 +2,13 @@
 
 The second brain is saved through the `GitHub` connector, always as one change on its own branch (say "a change waiting for your yes" to the founder) that the founder approves with the green button.
 
+To find the second brain, search with `GitHub:search_repositories`, query `user:@me second-brain`. If that finds exactly one, use it. Otherwise, whether it finds none or several, never list or name any you found: ask once "What is your business called?", then search `<business-name>-second-brain in:name` and use the private one with exactly that name (it may sit in an organisation).
+
 ## Names (every record named for what it is and dated, in the folder it belongs to)
 
 - Dated records: `<folder>/YYYY-MM-DD-<what-it-is>.md`, for example `customers/2026-11-19-customer-conversations.md`.
 - Living records keep a fixed name and gain a dated "What changed" line: `business/DECISIONS.md`, `offer/OFFER.md`, `brand/DESIGN.md`, `product/PRD.md`, `product/app-map.md`, `growth/content/CONTENT-SYSTEM.md`.
-- The week's one-page summary: `weekly/YYYY-MM-DD-week-NN-<short-title>.md` (week 0 is `week-00`). It holds: what was made (the artifact's name, and its link if the founder shares one), the decisions, the self-check ratings and Claude's one improvement, the week's commitments in one line that is true when written ("To be set as dated tasks once you approve this change:" plus the agreed titles and dates; in `/did-it` and the weekly check-in, where the tasks already exist, "On your task list:" plus titles and dates), and links to the week's records.
+- The week's one-page summary: `weekly/YYYY-MM-DD-week-NN-<short-title>.md` (week 0 is `week-00`). It holds: what was made (the artifact's name, and its link if the founder shares one), the decisions, the founder's ratings against the week's lines (headed "How you rated it", never "self-check") and Claude's one improvement, the week's commitments in one line that is true when written ("To be set as dated tasks once you approve this change:" plus the agreed titles and dates; in `/did-it` and the weekly check-in, where the tasks already exist, "On your task list:" plus titles and dates), and links to the week's records.
 - Folders: business, customers, product, offer, growth, brand, sources, weekly, skills. No other top-level folders. No README files as records.
 
 ## The five steps

@@ -15,7 +15,7 @@ Read `references/lab-rules.md` first and follow its eight steps. This page gives
 
 ## Before you start
 
-Find the founder's second brain (`GitHub:search_repositories`, query `user:@me second-brain`). Read `product/PRD.md` (the second feature), the Week 15 plan and check, `product/app-map.md` and `brand/DESIGN.md`. If the first journey has no check record, send them to the Week 15 lab first.
+Find the founder's second brain (as the lab rules say). Read `product/PRD.md` (the second feature), the Week 15 plan and check, `product/app-map.md` and `brand/DESIGN.md`. If the first journey has no check record, send them to the Week 15 lab first.
 
 **Bring:** what their Week 15 tester said, a view on what one member should never see of another, and a second email address to sign up with as another member.
 
