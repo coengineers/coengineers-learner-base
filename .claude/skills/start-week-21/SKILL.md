@@ -15,7 +15,7 @@ Read `references/lab-rules.md` first and follow its eight steps. If the installe
 
 ## Before you start
 
-Find the founder's second brain (`GitHub:search_repositories`, query `user:@me second-brain`). Read `product/PRD.md`, the launch record, the Week 19 change/retest notes and Week 20 support note, `offer/OFFER.md` and the asks from Week 11 (`offer/`). Read the contacts in their task list (the CoEngineers CRM) who said yes or not now. If the app is not online, send them to the Week 19 lab first.
+Find the founder's second brain (as the lab rules say). Read `product/PRD.md`, the launch record, the Week 19 change/retest notes and Week 20 support note, `offer/OFFER.md` and the asks from Week 11 (`offer/`). Read the contacts in their task list (the CoEngineers CRM) who said yes or not now. If the app is not online, send them to the Week 19 lab first.
 
 A working free test address counts as online for planning the pilot. Do not require a bought web address or a launch record to make the plan. Keep every unresolved member-safety step visible, and keep invitations and the paid pilot waiting for those steps; a plan is not proof that anyone was invited or paid.
 

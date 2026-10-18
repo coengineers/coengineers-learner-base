@@ -25,7 +25,7 @@ Claude Code on the web (claude.ai/code), on the founder's app, right after `feat
 
 The session should hold two things: the founder's app and their second brain. Read the brand, logo files, plan and records from the second brain. If it is not in the session, ask the founder to add it (the + beside the app's name at the top of Claude Code) and wait; never ask them to paste the brand guide.
 
-Before handing over, read the checks on the change (the green tick or red cross GitHub shows). If any is red, fix it first, including the app's own browser tests when your change altered words or pages they look for. Never hand over with red checks; if one cannot be fixed, say which and why in one line.
+Before opening the change, search every test folder, the browser tests included, for each word or page you changed, and update those tests in the same change. The browser tests run only in GitHub's verify check, which starts its own database and takes about ten minutes, so after opening the change wait for all its checks before handing over, and report what verify showed (never "browser tests not run" once it has run). If any is red, fix it first. Never hand over with red checks; if one cannot be fixed, or the checks have not finished, say which and why in one line.
 
 **In a lab, five rules:**
 - **Look first for app changes still waiting.** Before building, list the app's changes that are not yet approved. If one is waiting (last week's, usually), say so by name and ask: approve it first, or build on top of it. Never build from the saved app in silence, and never describe a waiting change as the app having drifted.
