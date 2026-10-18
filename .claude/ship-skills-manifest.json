@@ -1,7 +1,7 @@
 {
   "plugin": "coengineers",
-  "version": "0.10.42",
-  "sourceCommit": "afcceb21435e0f20b369fd6fa4367fb9d95863e8",
+  "version": "0.10.43",
+  "sourceCommit": "83da9138d49f5d96e24dfdc3d62ac8ff81dd0ca3",
   "skills": [
     "product-prd-builder",
     "base-app-setup",
@@ -93,7 +93,7 @@
     "pilot-reviewer/references/on-screen.md": "063cbbc9ee5526ed5990d3e6e1678db68efbf0932701d6d5a91c0fe4e704a6b5",
     "pilot-reviewer/references/save-rules.md": "fb638d33a3286810f4c9bc78d05773b9dbf8efc3b9aef12b10057485333a9dff",
     "pilot-reviewer/references/task-rules.md": "85143a2f6df63d541b24d4f8311824c6dcff6ddfad742a268e8568d883776f94",
-    "start-app-setup/SKILL.md": "2132fb2fcdf9397cd406506cd0ddb1b7d7966dd84c7c35f2b5814f455e73949c",
+    "start-app-setup/SKILL.md": "7e4f8189698331de70a0acedf384aeba73f357be92ec5bedb7e9d2dfc3022e7c",
     "start-app-setup/references/lab-rules.md": "de71dfabc069abb1c1f01a92e9b62f68cf64183b34438d90ae7b821775daae8f",
     "start-app-setup/references/save-rules.md": "fb638d33a3286810f4c9bc78d05773b9dbf8efc3b9aef12b10057485333a9dff",
     "start-app-setup/references/scenario/README.md": "6f167c1e5118e6f7dddfdc77749e5b021a263fd1cffc7a183d1a71d5770f83b3",
