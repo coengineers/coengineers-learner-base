@@ -3,7 +3,7 @@ name: start-app-setup
 description: Runs the CoEngineers session called Your app's accounts. The founder owns their app's accounts, and Claude joins them up in a live session with John. Use when they type start app setup.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.1"
+  version: "2.0.3"
   week: "Setup"
   course: "Ship"
   author: "CoEngineers"
@@ -19,7 +19,7 @@ Find the founder's second brain (as the lab rules say). Read `business/one-line.
 
 Ask whether they want guided help now or in the live session. They can check their own accounts and prepare their private copy before the session. Pause a step that needs owner action or support, but continue independent preparation.
 
-**Bring:** their GitHub sign-in from Module 0, and their phone. The email their accounts are in is typed on each site, never into this chat: do not ask for it.
+**Bring:** (the first reply opens "To have to hand:" with this) their GitHub sign-in from Module 0, and their phone. The email their accounts are in is typed on each site, never into this chat: do not ask for it.
 
 ## Check-in
 
@@ -32,7 +32,7 @@ Read the Week 12 decision note and the open Week 12 tasks. Your first reply name
 
 ## Artifact
 
-Build in Claude Code, the building tool (say it like that the first time). When they are ready to join up their own accounts, tell the founder: open https://claude.ai/code. Use the Everyday cloud environment, which has full network access. If it asks to create one instead, keep the name Default, choose Full network access (Limited cannot reach Supabase or Cloudflare) and press Create & finish. Choose Sonnet 5.5 in the model menu at the bottom (Claude Code starts on Opus). Then press + and choose your app (the copy you made), then press + again and add your second brain. If Claude Code says "No repositories match", press Refresh list first and search again. Only if it is still missing, press Install the Claude GitHub App under it, choose Only select repositories, pick your app and your second brain, save, then go back and search again. Give them one sentence to paste, filled in with the decisions: "First bring my app’s copy up to date with the changes I have approved. Read the current skill from that copy before using it. Use the base-app-setup skill to set up my app, <app name>, in <region>. My second brain is <second brain name>."
+Build in Claude Code, the building tool (say it like that the first time). When they are ready to join up their own accounts, tell the founder: open https://claude.ai/code. Use the Everyday cloud environment, which has full network access. If it asks to create one instead, keep the name Default, choose Full network access (Limited cannot reach Supabase or Cloudflare) and press Create & finish. Choose Sonnet 5.5 in the model menu at the bottom (Claude Code starts on Opus). Then press the folder button at the bottom (it shows Repo) and choose your app (the copy you made), then open it again and choose your second brain as well; both stay ticked. If Claude Code says "No repositories match", press Refresh list first and search again. Only if it is still missing, press Install the Claude GitHub App under it, choose Only select repositories, pick your app and your second brain, save, then go back and search again. Give them one sentence to paste, filled in with the decisions: "First bring my app’s copy up to date with the changes I have approved. Read the current skill from that copy before using it. Use the base-app-setup skill to set up my app, <app name>, in <region>. My second brain is <second brain name>."
 
 Which steps happen where, to say to the founder:
 
@@ -51,7 +51,7 @@ Check each line from what was actually seen or reported. Say when a check needs 
 
 - Every account is in your own name.
 - Your app opens at its test address and you can sign in to it.
-- The app map says where each thing lives and who owns it, with no secret codes in it.
+- The app map says where each thing lives and who owns it, with no secret keys in it.
 - You can say which parts are in this chat and which are on other sites.
 
 ## Records
