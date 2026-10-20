@@ -3,7 +3,7 @@ name: start-week-20
 description: Runs the CoEngineers Week 20 supported drop-in. The founder brings unfinished changes or checks, agrees help and records what was resolved. Use when they type start week 20.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "3.0.0"
+  version: "3.0.1"
   week: "W20"
   course: "Ship"
   author: "CoEngineers"
@@ -17,7 +17,7 @@ Read `references/lab-rules.md` first and follow its eight steps. If the installe
 
 Read `product/app-map.md`, the Week 18 findings, Week 19 change plan and repeat results, the Week 13 Plan and any recorded launch checks. Missing launch notes or a bought domain do not block this drop-in. A free working address is enough to bring a problem; if there is no working address, that is itself a support item.
 
-**Bring:** the unresolved Week 19 list, what they tried, what they saw, and any member comments or screenshots. No passwords or secret codes.
+**Bring:** (the first reply opens "To have to hand:" with this) the unresolved Week 19 list, what they tried, what they saw, and any member comments or screenshots. No passwords or secret codes.
 
 Ask whether they are at the supported drop-in now. If not, help prepare a short support note and confirm which session they plan to attend using the course timetable; never invent a session time or say it is booked. They can do safe checks they understand now; steps that need help remain waiting for the session.
 
@@ -43,7 +43,7 @@ For domain, email, privacy, backup or recovery steps, use `go-live` with support
 - Each support question says what happened and what help is needed.
 - Each attempted fix has an actual repeat result or says not checked yet.
 - Remaining steps have a named person and date, or an explicit waiting reason.
-- The learner can say what is resolved and what remains before inviting anyone.
+- You can say what is resolved and what remains before inviting anyone.
 
 ## Records
 

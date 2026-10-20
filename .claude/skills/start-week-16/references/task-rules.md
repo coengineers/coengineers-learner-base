@@ -20,7 +20,7 @@ Course/lab improvement feedback is an email draft to ed@coengineers.ai for the l
   - NEXT STEP: "When you have done it, type /did-it in Claude." (Claude writes the contact notes; the founder never types into the task list.)
   - SOURCE: "Week NN lab, <date>".
 
-Read the tasks back once (`list_tasks`, filtered to this week) and always show them in one small table: task, who, date. Name a task by its title. Never show a task's reference number, in the chat or in a saved note.
+Read the tasks back once (`list_tasks`, filtered to this week) and always show them in one small table: task, who, date. Who is "You" for every task the founder does, even when it names another person (an ask, an invitation, a test they run); write "You, with <name>" when someone else takes part. Name a task by its title. Never show a task's reference number, in the chat or in a saved note.
 
 ## Reading tasks back (check-in)
 

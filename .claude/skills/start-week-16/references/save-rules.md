@@ -4,6 +4,8 @@ The second brain is saved through the `GitHub` connector, always as one change o
 
 To find the second brain, search with `GitHub:search_repositories`, query `user:@me second-brain`. If that finds exactly one, use it. Otherwise, whether it finds none or several, never list or name any you found: ask once "What is your business called?", then search `<business-name>-second-brain in:name` and use the private one with exactly that name (it may sit in an organisation).
 
+Read every note with `GitHub:get_file_contents` on its path, even when a listing gives a download link. Never open a download link or a raw.githubusercontent.com address with web fetch: it asks the founder for permission and shows a private link.
+
 ## Names (every record named for what it is and dated, in the folder it belongs to)
 
 - Dated records: `<folder>/YYYY-MM-DD-<what-it-is>.md`, for example `customers/2026-11-19-customer-conversations.md`.

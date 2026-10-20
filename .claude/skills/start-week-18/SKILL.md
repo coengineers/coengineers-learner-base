@@ -17,7 +17,7 @@ Read `references/lab-rules.md` first and follow its eight steps. This page gives
 
 Find the founder's second brain (as the lab rules say). Read `product/PRD.md`, the Week 15 to 17 records and `product/app-map.md`. Ask who the fresh tester is: someone who has not seen the app and fits the members you want, with a phone. If no journey is built, send them to the Week 15 lab first.
 
-**Bring:** one person who has not seen the app, with a phone and thirty minutes this week.
+**Bring:** (the first reply opens "To have to hand:" with this) one person who has not seen the app, with a phone and thirty minutes this week.
 
 ## Check-in
 
@@ -32,7 +32,7 @@ From the Week 17 What happened section: whether the payment page opened, showed 
 
 ## Artifact
 
-The tester follows the script on their phone while the founder watches and notes what happened at each step, in the tester's words. Ask for those notes before drafting any results; an unreported step stays Unknown. Keep earlier tests separate and never assign their problems to a new tester. Simulated results need explicit simulated notes from the founder. Nothing is fixed during the test.
+The lab has two parts. Part one ends with the test sheet: make it, save it with the tasks to ask the tester and run the test (the founder does both), then close and tell them to come back to this chat after the test and type "where was I". Never ask for check ratings before the test. Part two starts there. The tester follows the script on their phone while the founder watches and notes what happened at each step, in the tester's words. Ask for those notes before drafting any results; an unreported step stays Unknown. Keep earlier tests separate and never assign their problems to a new tester. Simulated results need explicit simulated notes from the founder. Nothing is fixed during the test.
 
 What they get is the Test results page: each step ticked or crossed, every problem with its grade, and the proposed changes or accepted issues, each linked to the tester's observation. Plan and implement those changes in Week 19, then repeat the affected tests. Nothing shows as fixed until the tester repeats that step.
 

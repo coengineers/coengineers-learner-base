@@ -19,7 +19,7 @@ Find the founder's second brain (as the lab rules say). Read `product/PRD.md`, t
 
 A working free test address counts as online for planning the pilot. Do not require a bought web address or a launch record to make the plan. Keep every unresolved member-safety step visible, and keep invitations and the paid pilot waiting for those steps; a plan is not proof that anyone was invited or paid.
 
-**Bring:** the names of up to six people to invite first. No names yet? They say so at the start.
+**Bring:** (the first reply opens "To have to hand:" with this) the names of up to six people to invite first. No names yet? They say so at the start.
 
 ## Check-in
 
@@ -30,7 +30,7 @@ From the Week 20 What happened section: what support resolved, what the repeats 
 ## Decisions (two rounds at most)
 
 1. **Size and end date.** How many members and for how many weeks. Draft from the plan and the yeses.
-2. **Measures, change rule and asking members.** Weekly measures (draft three), one change per round at most, and how they will ask members what they think.
+2. **Measures, change rule and asking members.** Weekly measures (draft three, each with a target the founder can keep and change after round one), one change per round at most, and how they will ask members what they think.
 
 ## Artifact
 
@@ -57,7 +57,7 @@ Before any GitHub write, read `references/save-rules.md` and follow its five ste
 
 ## Close
 
-They open each "Invite <name> to the pilot" task in the task list and send the invitation themselves. Say which pilot check-ins fall before the next lab. Bring the app on their phone to the End of Ship live session. When the invitations are sent, type /did-it.
+The first line ends "Course 3 is finished." The second line says they send each invitation themselves from its task, and which pilot check-ins fall before the next lab. The third line, exactly: "Bring your app on your phone to the End of Ship live session. When the invitations are sent, type /did-it."
 
 ## If they have nothing to hand
 

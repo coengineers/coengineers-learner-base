@@ -3,7 +3,7 @@ name: app-make-it-yours
 description: Puts the founder's brand and their members' words into their app on its test address, in Claude Code on the web. Use in the Week 14 lab or when they want the app to look like theirs.
 license: Proprietary. CoEngineers apprenticeship use only.
 metadata:
-  version: "2.0.2"
+  version: "2.0.3"
   week: "W14"
   course: "Ship"
   author: "CoEngineers"
@@ -55,7 +55,7 @@ Before opening the change, search every test folder, the browser tests included,
 
 1. Read the inputs and say in one line what you found.
 2. Open the app's current look and list what is the template's.
-3. Apply the brand in one change: colours, type, wordmark, footer, and the words the lab chose. Change every member-facing template phrase through `apps/web/src/brand.ts`: the sign-in words (the left panel shows on desktop only; phones show one panel), Home heading and line, eyebrow, panel, cards, banner, both footers, workspace labels, Guide and the page title. Draft short member words from the agreed offer for any phrases the lab did not name and ask for their yes in one round. Neutral account controls and error messages stay as they are. Never hard-code business words in a page component. Leave app behaviour as it is. Use tokens by name; never hard-code a colour or font the brand does not give. Keep the app's success and error colours. The logo is a file in the app's brand folder, set through `logoUrl` as `references/method.md` says; the on-screen rule about pasting a logo as code is for self-contained pages, not the app.
+3. Apply the brand in one change: colours, type, wordmark, footer, and the words the lab chose. Show every word you draft to the founder in the chat, as a short list, before asking for their yes; never ask them to approve words they cannot see. Change every member-facing template phrase through `apps/web/src/brand.ts`: the sign-in words (the left panel shows on desktop only; phones show one panel), Home heading and line, eyebrow, panel, cards, banner, both footers, workspace labels, Guide and the page title. Draft short member words from the agreed offer for any phrases the lab did not name and ask for their yes in one round. Neutral account controls and error messages stay as they are. Never hard-code business words in a page component. Leave app behaviour as it is. Use tokens by name; never hard-code a colour or font the brand does not give. Keep the app's success and error colours. The logo is a file in the app's brand folder, set through `logoUrl` as `references/method.md` says; the on-screen rule about pasting a logo as code is for self-contained pages, not the app.
 4. Check body text and buttons are easy to read (contrast) and run the app's own checks. Show Home and sign-in at phone size and laptop size. The sign-in form must visibly show the app name and logo at both sizes, including account creation and recovery; the wide story panel alone is insufficient.
 5. Open the app's change for the founder's yes. They read it and press the green button when it is right. Only promise an automatic update if the app map confirms it. Otherwise say "ask whoever set up your online home to update it".
 6. The phone check is the founder's step after the lab: once the change is approved, they open the test address on their phone and note three things. Do not ask for the notes now.
