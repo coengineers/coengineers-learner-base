@@ -15,9 +15,9 @@ Read `references/lab-rules.md` first and follow its eight steps. This page gives
 
 ## Before you start
 
-Find the founder's second brain (as the lab rules say). Read `product/PRD.md` (the Week 13 Plan: the first feature and its done test), `product/app-map.md` and `brand/DESIGN.md`. If there is no plan, send them to the Week 13 lab first.
+**Bring:** (the first reply opens "To have to hand:" with this, before any question) their phone, the three notes from Week 14 and the Week 13 Plan. Its done test is the sentence inside that Plan describing how they will know a feature works; it is not another document to find.
 
-**Bring:** (the first reply opens "To have to hand:" with this) their phone, the three notes from Week 14 and the Week 13 Plan. Its done test is the sentence inside that Plan describing how they will know a feature works; it is not another document to find.
+Find the founder's second brain (as the lab rules say). Read `product/PRD.md` (the Week 13 Plan: the first feature and its done test), `product/app-map.md` and `brand/DESIGN.md`. If there is no plan, send them to the Week 13 lab first.
 
 ## Check-in
 

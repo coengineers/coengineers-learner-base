@@ -15,9 +15,9 @@ Read `references/lab-rules.md` first and follow its eight steps. This page gives
 
 ## Before you start
 
-Find the founder's second brain (as the lab rules say). Read `product/PRD.md` (the second feature), the Week 15 plan and check, `product/app-map.md` and `brand/DESIGN.md`. If the first journey has no check record, send them to the Week 15 lab first.
+**Bring:** (the first reply opens "To have to hand:" with this, before any question) the things they noted on their phone in Week 14 and what their Week 15 tester said, a view on what one member should never see of another, and a second email address to sign up with as another member.
 
-**Bring:** (the first reply opens "To have to hand:" with this) the things they noted on their phone in Week 14 and what their Week 15 tester said, a view on what one member should never see of another, and a second email address to sign up with as another member.
+Find the founder's second brain (as the lab rules say). Read `product/PRD.md` (the second feature), the Week 15 plan and check, `product/app-map.md` and `brand/DESIGN.md`. If the first journey has no check record, send them to the Week 15 lab first.
 
 ## Check-in
 

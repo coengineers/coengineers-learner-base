@@ -15,9 +15,9 @@ Read `references/lab-rules.md` first and follow its eight steps. This page gives
 
 ## Before you start
 
-Find the founder's second brain (as the lab rules say). Read `product/PRD.md`, `offer/OFFER.md` (price and how members pay), the Week 15 and 16 records and `product/app-map.md`. If the second journey has no check record, send them to the Week 16 lab first.
+**Bring:** (the first reply opens "To have to hand:" with this, before any question) their route (membership or pay-as-you-go), their price and what members get, and where they take payments (their payment page; if they take payment another way, such as by invoice, they say so and the lab works with that).
 
-**Bring:** (the first reply opens "To have to hand:" with this) their route (membership or pay-as-you-go), their price and what members get, and where they take payments (their payment page; if they take payment another way, such as by invoice, they say so and the lab works with that).
+Find the founder's second brain (as the lab rules say). Read `product/PRD.md`, `offer/OFFER.md` (price and how members pay), the Week 15 and 16 records and `product/app-map.md`. If the second journey has no check record, send them to the Week 16 lab first.
 
 ## Check-in
 

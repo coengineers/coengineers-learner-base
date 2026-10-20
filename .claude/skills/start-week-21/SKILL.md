@@ -15,11 +15,11 @@ Read `references/lab-rules.md` first and follow its eight steps. If the installe
 
 ## Before you start
 
+**Bring:** (the first reply opens "To have to hand:" with this, before any question) the names of up to six people to invite first. No names yet? They say so at the start.
+
 Find the founder's second brain (as the lab rules say). Read `product/PRD.md`, the launch record, the Week 19 change/retest notes and Week 20 support note, `offer/OFFER.md` and the asks from Week 11 (`offer/`). Read the contacts in their task list (the CoEngineers CRM) who said yes or not now. If the app is not online, send them to the Week 19 lab first.
 
 A working free test address counts as online for planning the pilot. Do not require a bought web address or a launch record to make the plan. Keep every unresolved member-safety step visible, and keep invitations and the paid pilot waiting for those steps; a plan is not proof that anyone was invited or paid.
-
-**Bring:** (the first reply opens "To have to hand:" with this) the names of up to six people to invite first. No names yet? They say so at the start.
 
 ## Check-in
 
