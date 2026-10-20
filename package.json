@@ -33,7 +33,7 @@
     "@trpc/server": "11.19.0",
     "@modelcontextprotocol/sdk": "1.31.0",
     "drizzle-orm": "0.45.2",
-    "hono": "4.13.8",
+    "hono": "4.13.11",
     "lucide-react": "1.47.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",
