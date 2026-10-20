@@ -15,9 +15,9 @@ Read `references/lab-rules.md` first and follow its eight steps. If the installe
 
 ## Before you start
 
-Read the second brain's `product/app-map.md`, Week 18 member-test results and proposed changes, `product/PRD.md` (the Week 13 Plan), `brand/DESIGN.md` and earlier feature checks. Unfixed Week 18 problems are inputs to this lab. If results are missing, offer the Week 18 test or work from clearly named observations; never invent a result.
+**Bring:** (the first reply opens "To have to hand:" with this, before any question) the Week 18 change list, the app's working address, someone to repeat the affected member steps, and a few hours across one or two sittings. A bought domain is not required.
 
-**Bring:** (the first reply opens "To have to hand:" with this) the Week 18 change list, the app's working address, someone to repeat the affected member steps, and a few hours across one or two sittings. A bought domain is not required.
+Read the second brain's `product/app-map.md`, Week 18 member-test results and proposed changes, `product/PRD.md` (the Week 13 Plan), `brand/DESIGN.md` and earlier feature checks. Unfixed Week 18 problems are inputs to this lab. If results are missing, offer the Week 18 test or work from clearly named observations; never invent a result.
 
 ## Check-in
 

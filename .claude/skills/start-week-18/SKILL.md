@@ -15,9 +15,9 @@ Read `references/lab-rules.md` first and follow its eight steps. This page gives
 
 ## Before you start
 
-Find the founder's second brain (as the lab rules say). Read `product/PRD.md`, the Week 15 to 17 records and `product/app-map.md`. Ask who the fresh tester is: someone who has not seen the app and fits the members you want, with a phone. If no journey is built, send them to the Week 15 lab first.
+**Bring:** (the first reply opens "To have to hand:" with this, before any question) one person who has not seen the app, with a phone and thirty minutes this week.
 
-**Bring:** (the first reply opens "To have to hand:" with this) one person who has not seen the app, with a phone and thirty minutes this week.
+Find the founder's second brain (as the lab rules say). Read `product/PRD.md`, the Week 15 to 17 records and `product/app-map.md`. Ask who the fresh tester is: someone who has not seen the app and fits the members you want, with a phone. If no journey is built, send them to the Week 15 lab first.
 
 ## Check-in
 

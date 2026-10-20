@@ -15,11 +15,11 @@ Read `references/lab-rules.md` first and follow its eight steps. This page gives
 
 ## Before you start
 
+**Bring:** (the first reply opens "To have to hand:" with this, before any question) their GitHub sign-in from Module 0, and their phone. The email their accounts are in is typed on each site, never into this chat: do not ask for it.
+
 Find the founder's second brain (as the lab rules say). Read `business/one-line.md`, `brand/DESIGN.md`, `offer/OFFER.md` and `product/PRD.md`. The founder takes their own copy of the base app before the session: on https://github.com/coengineers/coengineers-learner-base they press Use this template, then Create a new repository, choose themselves as owner, name it after their app and choose Private. Look for it (`GitHub:search_repositories`, query `user:@me` and the app's name). If there is no copy yet, give those steps first and wait for "done"; never tell them to press Fork, because a fork of a public page is public. If the copy is public, say so and have them make it private in its Settings before anything else. Supabase and Cloudflare are the learner's own accounts prepared in Week 12 Do, secured by them on each provider's site. If either is missing, return to that preparation guide and mark it not yet. If the offer is missing, send them to the Week 12 lab first.
 
 Ask whether they want guided help now or in the live session. They can check their own accounts and prepare their private copy before the session. Pause a step that needs owner action or support, but continue independent preparation.
-
-**Bring:** (the first reply opens "To have to hand:" with this) their GitHub sign-in from Module 0, and their phone. The email their accounts are in is typed on each site, never into this chat: do not ask for it.
 
 ## Check-in
 
@@ -39,7 +39,6 @@ Which steps happen where, to say to the founder:
 - **Week 12 Do, before Week 13:** the learner creates Supabase and Cloudflare accounts, verifies email, secures sign-in and confirms they can return to both dashboards. GitHub was set up in Module 0. The course guide gives the steps and expected results; passwords and recovery codes remain private.
 - **Joining up, with help available:** use the learner-owned accounts to set up the place that keeps members' details, put the app at its free test address and connect the parts, one step at a time. Confirm their name or organisation owns each. If a page asks for a card, stop that step and bring it to support.
 - **Any unfinished step:** record what is still needed and who does it. The learner signs in or changes account security only on the provider's own pages. Never request passwords or recovery codes here or claim a support session is booked.
-
 
 When the joining up is done they say "joined up" here. If they say some steps are still to do, name those steps, never show or call the joining up done, and put each open step in the notes with whose step it is. If Claude Code opened an app change, read it and press the green button to approve it. That saves the app change. If no settings needed changing, there may be no app change; Claude Code opens none on the second brain, and if it did, say so and ask them to close that one.
 
